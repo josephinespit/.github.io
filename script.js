@@ -166,6 +166,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+
+
     // Javascript function to check whether required fields are filled before enabling the "Next" button on campusPage, and show a notification with the missing fields (liek on personalPage)
 
 
@@ -229,8 +231,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
             
 
-//check required fields for WagPage: the only required field is the mcquestion scaleWag
+//check required fields for WagPage: the only required field is the mcquestion scaleWag. show a notification saying "please rate all aspects" if the button is disabled, using tooltip
 document.addEventListener('DOMContentLoaded', function() {
+
     var scaleWagInputs = document.querySelectorAll("input[name='scaleWag']");
     var WagButton = document.getElementById("WagButton");
 
@@ -248,9 +251,14 @@ document.addEventListener('DOMContentLoaded', function() {
         WagButton.disabled = !scaleWagSelected;
         if (WagButton.disabled) {
             WagButton.style.backgroundColor = 'red';
+            WagButton.title = "Please rate all aspects";
         } else {
             WagButton.style.backgroundColor = 'green';
+            WagButton.title = "";
         }
+
+        // Refresh the tooltip content
+        $(WagButton).tooltip("option", "content", WagButton.title);
     }
 
     // Add event listeners to required input fields
@@ -258,17 +266,24 @@ document.addEventListener('DOMContentLoaded', function() {
         input.addEventListener("change", checkRequiredFieldsWag);
     });
 
+    // Initialize tooltip
+    $(WagButton).tooltip();
+
     // Call the function initially to set the initial state of the button
     checkRequiredFieldsWag();
-}
-);
+});
 
-//check required fields for VUPage: the only required field is the mcquestion scaleVU
+
+
+
+//check required fields for VUPage: the only required field is the mcquestion scaleVU. show a notification saying "please rate all aspects" if the button is disabled, using tooltip
 document.addEventListener('DOMContentLoaded', function() {
+
     var scaleVUInputs = document.querySelectorAll("input[name='scaleVU']");
     var VUButton = document.getElementById("VUButton");
 
     function checkRequiredFieldsVU() {
+
         var scaleVUSelected = false; // Check if scaleVU is selected
 
         // check if any scaleVU option is selected
@@ -282,25 +297,33 @@ document.addEventListener('DOMContentLoaded', function() {
         VUButton.disabled = !scaleVUSelected;
         if (VUButton.disabled) {
             VUButton.style.backgroundColor = 'red';
+            VUButton.title = "Please rate all aspects";
         }
         else {
             VUButton.style.backgroundColor = 'green';
+            VUButton.title = "";
         }
+
+        // Refresh the tooltip content
+        $(VUButton).tooltip("option", "content", VUButton.title);
     }
 
     // Add event listeners to required input fields
     scaleVUInputs.forEach(function(input) {
         input.addEventListener("change", checkRequiredFieldsVU);
-    }
-    );
+    });
+
+    // Initialize tooltip
+    $(VUButton).tooltip();
 
     // Call the function initially to set the initial state of the button
     checkRequiredFieldsVU();
-}
-);
+});
 
-//check required fields for EindhovenPage: the only required field is the mcquestion scaleEindhoven
+
+//check required fields for EindhovenPage: the only required field is the mcquestion scaleEindhoven. show a notification saying "please rate all aspects" if the button is disabled, using tooltip
 document.addEventListener('DOMContentLoaded', function() {
+
     var scaleEindhovenInputs = document.querySelectorAll("input[name='scaleEindhoven']");
     var EindhovenButton = document.getElementById("EindhovenButton");
 
@@ -317,29 +340,42 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Enable or disable the "Next" button based on the required fields, and change color of button to green if all required fields are filled
         EindhovenButton.disabled = !scaleEindhovenSelected;
+
         if (EindhovenButton.disabled) {
             EindhovenButton.style.backgroundColor = 'red';
-        } else {
-            EindhovenButton.style.backgroundColor = 'green';
+            EindhovenButton.title = "Please rate all aspects";
         }
+        else {
+            EindhovenButton.style.backgroundColor = 'green';
+            EindhovenButton.title = "";
+        }
+
+        // Refresh the tooltip content
+        $(EindhovenButton).tooltip("option", "content", EindhovenButton.title);
     }
 
     // Add event listeners to required input fields
     scaleEindhovenInputs.forEach(function(input) {
         input.addEventListener("change", checkRequiredFieldsEindhoven);
-    });
+    }
+
+    );
+
+    // Initialize tooltip
+    $(EindhovenButton).tooltip();
 
     // Call the function initially to set the initial state of the button
     checkRequiredFieldsEindhoven();
-}
-);
+});
 
-// check if all required fields are selected for RotterdamPage before enabling the next button the only required field is the mcquestion scaleRotterdam
+//check required fields for RotterdamPage: the only required field is the mcquestion scaleRotterdam. show a notification saying "please rate all aspects" if the button is disabled, using tooltip
 document.addEventListener('DOMContentLoaded', function() {
+
     var scaleRotterdamInputs = document.querySelectorAll("input[name='scaleRotterdam']");
     var RotterdamButton = document.getElementById("RotterdamButton");
 
     function checkRequiredFieldsRotterdam() {
+
         var scaleRotterdamSelected = false; // Check if scaleRotterdam is selected
 
         // check if any scaleRotterdam option is selected
@@ -351,51 +387,65 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Enable or disable the "Next" button based on the required fields, and change color of button to green if all required fields are filled
         RotterdamButton.disabled = !scaleRotterdamSelected;
+
         if (RotterdamButton.disabled) {
             RotterdamButton.style.backgroundColor = 'red';
-        } else {
-            RotterdamButton.style.backgroundColor = 'green';
+            RotterdamButton.title = "Please rate all aspects";
         }
+        else {
+            RotterdamButton.style.backgroundColor = 'green';
+            RotterdamButton.title = "";
+        }
+
+        // Refresh the tooltip content
+        $(RotterdamButton).tooltip("option", "content", RotterdamButton.title);
     }
 
     // Add event listeners to required input fields
     scaleRotterdamInputs.forEach(function(input) {
         input.addEventListener("change", checkRequiredFieldsRotterdam);
-    }
-    );
+    });
+
+    // Initialize tooltip
+    $(RotterdamButton).tooltip();
 
     // Call the function initially to set the initial state of the button
     checkRequiredFieldsRotterdam();
-}
+});
 
-);
-
-
-
-//check required fields for DelftPage: the only required field is the mcquestion scaleDelft
+//check required fields for DelftPage: the only required field is the mcquestion scaleDelft. show a notification saying "please rate all aspects" if the button is disabled, using tooltip
 document.addEventListener('DOMContentLoaded', function() {
+
     var scaleDelftInputs = document.querySelectorAll("input[name='scaleDelft']");
     var DelftButton = document.getElementById("DelftButton");
 
     function checkRequiredFieldsDelft() {
-            
-            var scaleDelftSelected = false; // Check if scaleDelft is selected
-    
-            // check if any scaleDelft option is selected
-            scaleDelftInputs.forEach(function(input) {
-                if (input.checked) {
-                    scaleDelftSelected = true;
-                }
-            });
-    
-            // Enable or disable the "Next" button based on the required fields, and change color of button to green if all required fields are filled
-            DelftButton.disabled = !scaleDelftSelected;
-            if (DelftButton.disabled) {
-                DelftButton.style.backgroundColor = 'red';
-            } else {
-                DelftButton.style.backgroundColor = 'green';
+
+        var scaleDelftSelected = false; // Check if scaleDelft is selected
+
+        // check if any scaleDelft option is selected
+        scaleDelftInputs.forEach(function(input) {
+            if (input.checked) {
+                scaleDelftSelected = true;
             }
+        });
+
+        // Enable or disable the "Next" button based on the required fields, and change color of button to green if all required fields are filled
+        DelftButton.disabled = !scaleDelftSelected;
+
+        if (DelftButton.disabled) {
+            DelftButton.style.backgroundColor = 'red';
+            DelftButton.title = "Please rate all aspects";
         }
+        else {
+
+            DelftButton.style.backgroundColor = 'green';
+            DelftButton.title = "";
+        }
+
+        // Refresh the tooltip content
+        $(DelftButton).tooltip("option", "content", DelftButton.title);
+    }
 
     // Add event listeners to required input fields
     scaleDelftInputs.forEach(function(input) {
@@ -403,10 +453,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     );
 
+    // Initialize tooltip
+    $(DelftButton).tooltip();
+
     // Call the function initially to set the initial state of the button
     checkRequiredFieldsDelft();
-}
-);
+});
+
 
 
 
