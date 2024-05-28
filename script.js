@@ -227,6 +227,33 @@ document.addEventListener('DOMContentLoaded', function() {
 
     });
 
+    //check whether required fields are filled in for mapUsePage, the only required question is mcquestion puporse
+    document.addEventListener('DOMContentLoaded', function() {
+        var purposeInputs = document.querySelectorAll("input[name='purpose']");
+        var mapUseButton = document.getElementById("mapUseButton");
+
+        function checkRequiredFieldsMapUse() {
+            var purposeSelected = Array.from(purposeInputs).some(input => input.checked);
+
+            if (!purposeSelected) {
+                mapUseButton.disabled = true;
+                mapUseButton.style.backgroundColor = 'red';
+
+            } else {
+                mapUseButton.disabled = false;
+                mapUseButton.style.backgroundColor = 'green';
+            }
+        }
+
+        purposeInputs.forEach(input => input.addEventListener("change", checkRequiredFieldsMapUse));
+
+        // Call the function initially to set the initial state of the button
+        checkRequiredFieldsMapUse();
+    });
+
+
+
+
 
 
             
@@ -481,7 +508,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     
             // Enable or disable the "Next" button based on the required fields
-            compareButton.disabled = !(purposeSelected && saveButtonClicked);
+            compareButton.disabled = !(saveButtonClicked);
             if (compareButton.disabled) {
                 compareButton.style.backgroundColor = 'red';
             } else {
@@ -549,8 +576,8 @@ document.addEventListener('DOMContentLoaded', function() {
     //     var slider_layout_Wag = document.getElementById('slider_layout_Wag');
     //     var slider_3D_clarity_Wag = document.getElementById('slider_3D_clarity_Wag');
     //     var slider_info_Wag = document.getElementById('slider_info_Wag');
+    //     var slider_legend_completeness_Wag = document.getElementById('slider_legend_completeness_Wag');
     //     var slider_legend_clarity_Wag = document.getElementById('slider_legend_clarity_Wag');
-    //     var slider_legend_content_Wag = document.getElementById('slider_legend_content_Wag');
     //     var slider_text_clarity_Wag = document.getElementById('slider_text_clarity_Wag');
     //     var slider_text_visualization_Wag = document.getElementById('slider_text_visualization_Wag');
     //     var slider_color_clarity_Wag = document.getElementById('slider_color_clarity_Wag');
@@ -563,8 +590,8 @@ document.addEventListener('DOMContentLoaded', function() {
     //         var slider_layout_WagSelected = false; // Check if slider_layout_Wag is selected
     //         var slider_3D_clarity_WagSelected = false; // Check if slider_3D_clarity_Wag is selected
     //         var slider_info_WagSelected = false; // Check if slider_info_Wag is selected
+    //         var slider_legend_completeness_WagSelected = false; // Check if slider_legend_completeness_Wag is selected
     //         var slider_legend_clarity_WagSelected = false; // Check if slider_legend_clarity_Wag is selected
-    //         var slider_legend_content_WagSelected = false; // Check if slider_legend_content_Wag is selected
     //         var slider_text_clarity_WagSelected = false; // Check if slider_text_clarity_Wag is selected
     //         var slider_text_visualization_WagSelected = false; // Check if slider_text_visualization_Wag is selected
     //         var slider_color_clarity_WagSelected = false; // Check if slider_color_clarity_Wag is selected
@@ -589,7 +616,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //         // Enable or disable the "Next" button based on the required fields, and change color of button to green if all required fields are filled
     //         var WagButton = document.getElementById("WagButton");
-    //         WagButton.disabled = !(slider_layout_WagSelected && slider_3D_clarity_WagSelected && slider_info_WagSelected && slider_legend_clarity_WagSelected && slider_legend_content_WagSelected && slider_text_clarity_WagSelected && slider_text_visualization_WagSelected && slider_color_clarity_WagSelected && slider_color_meaning_WagSelected && slider_symbols_clarity_WagSelected && slider_symbols_meaning_WagSelected);
+    //         WagButton.disabled = !(slider_layout_WagSelected && slider_3D_clarity_WagSelected && slider_info_WagSelected && slider_legend_completeness_WagSelected && slider_legend_clarity_WagSelected && slider_text_clarity_WagSelected && slider_text_visualization_WagSelected && slider_color_clarity_WagSelected && slider_color_meaning_WagSelected && slider_symbols_clarity_WagSelected && slider_symbols_meaning_WagSelected);
     //         if (WagButton.disabled) {
 
     //             WagButton.style.backgroundColor = 'red';
@@ -605,8 +632,8 @@ document.addEventListener('DOMContentLoaded', function() {
     //     slider_layout_Wag.addEventListener("input", checkRequiredFieldsWag);
     //     slider_3D_clarity_Wag.addEventListener("input", checkRequiredFieldsWag);
     //     slider_info_Wag.addEventListener("input", checkRequiredFieldsWag);
+    //     slider_legend_completeness_Wag.addEventListener("input", checkRequiredFieldsWag);
     //     slider_legend_clarity_Wag.addEventListener("input", checkRequiredFieldsWag);
-    //     slider_legend_content_Wag.addEventListener("input", checkRequiredFieldsWag);
     //     slider_text_clarity_Wag.addEventListener("input", checkRequiredFieldsWag);
     //     slider_text_visualization_Wag.addEventListener("input", checkRequiredFieldsWag);
     //     slider_color_clarity_Wag.addEventListener("input", checkRequiredFieldsWag);
@@ -727,6 +754,13 @@ function collectResponses() {
     const campusExperience = document.getElementById('campusExperience');
     if (campusExperience) responses.campusExperience = campusExperience.value;
 
+
+    // collect resonses mapUsePage
+    const purpose = document.querySelector('input[name="purpose"]:checked');
+    if (purpose) responses.purpose = purpose.value;
+
+    
+
 // section C responses: Wageningen
 const slider_layout_Wag = document.getElementById('slider_layout_Wag');
 if (slider_layout_Wag) responses.slider_layout_Wag = slider_layout_Wag.value;
@@ -751,14 +785,14 @@ if (info_wag) responses.info_wag = info_wag.value;
 const scaleWag = document.querySelector('input[name="scaleWag"]:checked');
 if (scaleWag) responses.scaleWag = scaleWag.value;
 
-const slider_legend_clarity_Wag = document.getElementById('slider_legend_clarity_Wag');
-if (slider_legend_clarity_Wag) responses.slider_legend_clarity_Wag = slider_legend_clarity_Wag.value;
+const slider_legend_completeness_Wag = document.getElementById('slider_legend_completeness_Wag');
+if (slider_legend_completeness_Wag) responses.slider_legend_completeness_Wag = slider_legend_completeness_Wag.value;
 
 const legend_clarity_Wag = document.getElementById('legend_clarity_Wag');
 if (legend_clarity_Wag) responses.legend_clarity_Wag = legend_clarity_Wag.value;
 
-const slider_legend_content_Wag = document.getElementById('slider_legend_content_Wag');
-if (slider_legend_content_Wag) responses.slider_legend_content_Wag = slider_legend_content_Wag.value;
+const slider_legend_clarity_Wag = document.getElementById('slider_legend_clarity_Wag');
+if (slider_legend_clarity_Wag) responses.slider_legend_clarity_Wag = slider_legend_clarity_Wag.value;
 
 const legend_content_Wag = document.getElementById('legend_content_Wag');
 if (legend_content_Wag) responses.legend_content_Wag = legend_content_Wag.value;
@@ -826,14 +860,14 @@ if (info_VU) responses.info_VU = info_VU.value;
 const scaleVU = document.querySelector('input[name="scaleVU"]:checked');
 if (scaleVU) responses.scaleVU = scaleVU.value;
 
-const slider_legend_clarity_VU = document.getElementById('slider_legend_clarity_VU');
-if (slider_legend_clarity_VU) responses.slider_legend_clarity_VU = slider_legend_clarity_VU.value;
+const slider_legend_completeness_VU = document.getElementById('slider_legend_completeness_VU');
+if (slider_legend_completeness_VU) responses.slider_legend_completeness_VU = slider_legend_completeness_VU.value;
 
 const legend_clarity_VU = document.getElementById('legend_clarity_VU');
 if (legend_clarity_VU) responses.legend_clarity_VU = legend_clarity_VU.value;
 
-const slider_legend_content_VU = document.getElementById('slider_legend_content_VU');
-if (slider_legend_content_VU) responses.slider_legend_content_VU = slider_legend_content_VU.value;
+const slider_legend_clarity_VU = document.getElementById('slider_legend_clarity_VU');
+if (slider_legend_clarity_VU) responses.slider_legend_clarity_VU = slider_legend_clarity_VU.value;
 
 const legend_content_VU = document.getElementById('legend_content_VU');
 if (legend_content_VU) responses.legend_content_VU = legend_content_VU.value;
@@ -898,14 +932,14 @@ if (info_Eindhoven) responses.info_Eindhoven = info_Eindhoven.value;
 const scaleEindhoven = document.querySelector('input[name="scaleEindhoven"]:checked');
 if (scaleEindhoven) responses.scaleEindhoven = scaleEindhoven.value;
 
-const slider_legend_clarity_Eindhoven = document.getElementById('slider_legend_clarity_Eindhoven');
-if (slider_legend_clarity_Eindhoven) responses.slider_legend_clarity_Eindhoven = slider_legend_clarity_Eindhoven.value;
+const slider_legend_completeness_Eindhoven = document.getElementById('slider_legend_completeness_Eindhoven');
+if (slider_legend_completeness_Eindhoven) responses.slider_legend_completeness_Eindhoven = slider_legend_completeness_Eindhoven.value;
 
 const legend_clarity_Eindhoven = document.getElementById('legend_clarity_Eindhoven');
 if (legend_clarity_Eindhoven) responses.legend_clarity_Eindhoven = legend_clarity_Eindhoven.value;
 
-const slider_legend_content_Eindhoven = document.getElementById('slider_legend_content_Eindhoven');
-if (slider_legend_content_Eindhoven) responses.slider_legend_content_Eindhoven = slider_legend_content_Eindhoven.value;
+const slider_legend_clarity_Eindhoven = document.getElementById('slider_legend_clarity_Eindhoven');
+if (slider_legend_clarity_Eindhoven) responses.slider_legend_clarity_Eindhoven = slider_legend_clarity_Eindhoven.value;
 
 const legend_content_Eindhoven = document.getElementById('legend_content_Eindhoven');
 if (legend_content_Eindhoven) responses.legend_content_Eindhoven = legend_content_Eindhoven.value;
@@ -970,14 +1004,14 @@ if (info_Rotterdam) responses.info_Rotterdam = info_Rotterdam.value;
 const scaleRotterdam = document.querySelector('input[name="scaleRotterdam"]:checked');
 if (scaleRotterdam) responses.scaleRotterdam = scaleRotterdam.value;
 
-const slider_legend_clarity_Rotterdam = document.getElementById('slider_legend_clarity_Rotterdam');
-if (slider_legend_clarity_Rotterdam) responses.slider_legend_clarity_Rotterdam = slider_legend_clarity_Rotterdam.value;
+const slider_legend_completeness_Rotterdam = document.getElementById('slider_legend_completeness_Rotterdam');
+if (slider_legend_completeness_Rotterdam) responses.slider_legend_completeness_Rotterdam = slider_legend_completeness_Rotterdam.value;
 
 const legend_clarity_Rotterdam = document.getElementById('legend_clarity_Rotterdam');
 if (legend_clarity_Rotterdam) responses.legend_clarity_Rotterdam = legend_clarity_Rotterdam.value;
 
-const slider_legend_content_Rotterdam = document.getElementById('slider_legend_content_Rotterdam');
-if (slider_legend_content_Rotterdam) responses.slider_legend_content_Rotterdam = slider_legend_content_Rotterdam.value;
+const slider_legend_clarity_Rotterdam = document.getElementById('slider_legend_clarity_Rotterdam');
+if (slider_legend_clarity_Rotterdam) responses.slider_legend_clarity_Rotterdam = slider_legend_clarity_Rotterdam.value;
 
 const legend_content_Rotterdam = document.getElementById('legend_content_Rotterdam');
 if (legend_content_Rotterdam) responses.legend_content_Rotterdam = legend_content_Rotterdam.value;
@@ -1019,6 +1053,9 @@ const symbols_meaning_Rotterdam = document.getElementById('symbols_meaning_Rotte
 if (symbols_meaning_Rotterdam) responses.symbols_meaning_Rotterdam = symbols_meaning_Rotterdam.value;
 
 // section C responses: Delft
+const slider_familiarity_Delft = document.getElementById('slider_familiarity_Delft');
+if (slider_familiarity_Delft) responses.slider_familiarity_Delft = slider_familiarity_Delft.value;
+
 const slider_layout_Delft = document.getElementById('slider_layout_Delft');
 if (slider_layout_Delft) responses.slider_layout_Delft = slider_layout_Delft.value;
 
@@ -1042,14 +1079,14 @@ if (info_Delft) responses.info_Delft = info_Delft.value;
 const scaleDelft = document.querySelector('input[name="scaleDelft"]:checked');
 if (scaleDelft) responses.scaleDelft = scaleDelft.value;
 
-const slider_legend_clarity_Delft = document.getElementById('slider_legend_clarity_Delft');
-if (slider_legend_clarity_Delft) responses.slider_legend_clarity_Delft = slider_legend_clarity_Delft.value;
+const slider_legend_completeness_Delft = document.getElementById('slider_legend_completeness_Delft');
+if (slider_legend_completeness_Delft) responses.slider_legend_completeness_Delft = slider_legend_completeness_Delft.value;
 
 const legend_clarity_Delft = document.getElementById('legend_clarity_Delft');
 if (legend_clarity_Delft) responses.legend_clarity_Delft = legend_clarity_Delft.value;
 
-const slider_legend_content_Delft = document.getElementById('slider_legend_content_Delft');
-if (slider_legend_content_Delft) responses.slider_legend_content_Delft = slider_legend_content_Delft.value;
+const slider_legend_clarity_Delft = document.getElementById('slider_legend_clarity_Delft');
+if (slider_legend_clarity_Delft) responses.slider_legend_clarity_Delft = slider_legend_clarity_Delft.value;
 
 const legend_content_Delft = document.getElementById('legend_content_Delft');
 if (legend_content_Delft) responses.legend_content_Delft = legend_content_Delft.value;
@@ -1090,13 +1127,14 @@ if (slider_symbols_meaning_Delft) responses.slider_symbols_meaning_Delft = slide
 const symbols_meaning_Delft = document.getElementById('symbols_meaning_Delft');
 if (symbols_meaning_Delft) responses.symbols_meaning_Delft = symbols_meaning_Delft.value;
 
-// collect answers from page ComparePage: the mc question, and the order from the sortable list
-const purpose = document.querySelector('input[name="purpose"]:checked');
-if (purpose) responses.purpose = purpose.value;
-
 // collect the "result" from sortable, which is an array of the id's of the items in the sortable list, called sortedIDs
 const sortedIDs = $("#sortable").sortable("toArray");
 if (sortedIDs) responses.sortedIDs = sortedIDs;
+
+//collect email address on the submit page
+const emailInput = document.getElementById('emailInput');
+if (emailInput) responses.email = emailInput.value;
+
 
 
 

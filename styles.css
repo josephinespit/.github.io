@@ -93,6 +93,12 @@ p {
             font-size: 14px;
         }
 
+        input[type="text"]#emailInput {
+            
+            height: 20px;
+            font-size: 14px;
+        }
+
 page {
         display: flex;
         flex-direction: column;
@@ -337,21 +343,24 @@ img {
 
             .sidebar {
                 position: fixed;
-                top: 0;
-                right: 0;
+                top: 10px;
+                right: 10px;
                 width: 100px;
                 height: 100px;
-                background-color: #9ab6c946;
+                background-color: #9ab6c9;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                padding: 10px;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+
             }
 
             .sidebar p {
-                margin: 0;
-                font-size: 12px;
+                margin: 5px;
+                font-size: 14px;
                 color: #ffffff;
                 /* cursor: pointer; */
                 /* direction: rtl; */
@@ -359,27 +368,22 @@ img {
                 /* writing-mode: vertical-rl; */
                 position:absolute;
                 right: 10px;
-                top: 80px;
+                top: 90px;
                 width: auto;
-                text-align: right;               
+                text-align: right; 
+                margin-top:10px;              
             }
-
-        
-
-            
-
-
 
 
             
             .sidebar img {
-                width: 60px;
-                height: auto;
+                height: 60px;
+                width: auto;
                 cursor: zoom-in;
-                right: 20px;
-                top: 20px;
                 margin: 5px;
-                position: absolute;
+                position: relative;
+                align-self: center;
+               
                 transition: transform 0.3s ease-in-out;
                 
             }
@@ -390,7 +394,7 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 90vh;
+    height: 100vh;
     width: auto;
     /* background-color: rgba(0, 0, 0, 0.7); */
     z-index: 9999;
@@ -415,12 +419,16 @@ img {
 
             .enlarged-image-container2 p2 {
                 color: #ffffff;
-                font-size: 12px;
+                font-size: 14px;
                 position: absolute;
                 bottom: 10px;
                 right: 10px;
                 cursor: pointer;
-                background-color: #9ab6c9c4;
+                background-color: #9ab6c9;
+                padding: 5px;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+
             }
 
 .openquestion {
@@ -451,6 +459,7 @@ img {
                         display: flex;
                         align-items: center;
                     }
+                    
                     
                     .slider {
                         writing-mode: vertical-lr;

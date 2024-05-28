@@ -28,16 +28,17 @@
             <h2>Survey Master Thesis Geomatics</h2>
             <p>Hello, and thank you forparticipating in this survey. My name is Josephine Spit and I am a Geomatics master's student at TU Delft.  <br> <br>
                 I am conducting this survey as part of my Geomatics master's thesis. Your responses are greatly appreciated. <br> <br> 
-                All data will be handled in compliance with European privacy legislation (GDPR ), ensuring anonymity and exclusive use data-value research purposes, with data deletion upon completion of the thesis. <br>
+                All data will be handled in compliance with European privacy legislation (GDPR), ensuring anonymity and exclusive use for research purposes, with data deletion upon completion of the thesis. <br>
                 My thesis investigates the role of map users in the mapping process, and if/how different types of user participation influence the resulting map.  <br> 
                 <br></p>
                 <div class="survey-summary">
-                    <p>The survey consists of four parts:</p>
+                    <p>The survey consists of five parts:</p>
                     <ul>
                         <li><strong>Part A</strong>: Some questions about yourself.</li>
                         <li><strong>Part B</strong>: Questions related to your experience and engagement with the TU Delft campus.</li>
-                        <li><strong>Part C</strong>: Rating different campus maps on their content and design.</li>
-                        <li><strong>Part D</strong>: Discussing your needs for a campus map, and comparing the different campus maps to determine which one best fits your needs.</li>
+                        <li><strong>Part C</strong>: Defining your use of a campus map.</li>
+                        <li><strong>Part D</strong>: Rating different campus maps on their content and design.</li>
+                        <li><strong>Part E</strong>: Comparing the different campus maps to determine which one best fits your needs.</li>
                     </ul>
                     <p>The details will be explained along the survey. <br> <br>
                         This survey will take approximately 10-15 minutes.</p>
@@ -54,14 +55,14 @@
             
             <div class="questioncontainer">
                 <div class="openquestion">
-                    <h3>What is your age? *</h3>
+                    <h3>1. What is your age? *</h3>
                     <textarea rows="4" cols="50" id="ageInput" required></textarea>
                 </div>
             </div>
 
             <div class="questioncontainer">
                 <div class="mcquestion">
-                    <h3>What is your gender? *</h3>
+                    <h3>2. What is your gender? *</h3>
                     <input type="radio" name="gender" value="man" id="genderMan" required> Man<br>
                     <input type="radio" name="gender" value="woman" id="genderWoman"> Woman<br>
                     <input type="radio" name="gender" value="nonbinary" id="genderNonBinary"> Non-Binary<br>
@@ -74,7 +75,7 @@
             
             <div class="questioncontainer">
                 <div class="mcquestion">
-                    <h3>What is your connection with TU Delft? *</h3>
+                    <h3>3. What is your connection with TU Delft? *</h3>
                     <input type="radio" name="connection" value="bachelor" id="connectionBachelor"> Bachelor Student<br>
                     <input type="radio" name="connection" value="master" id="connectionMaster"> Master Student<br>
                     <input type="radio" name="connection" value="phd" id="connectionPhd"> PhD<br>
@@ -90,7 +91,7 @@
             <div class="questioncontainer">
         
             <div class="mcquestion">
-                    <h3> Where do you live? *</h3>
+                    <h3>4. Where do you live? *</h3>
                     <input type="radio" name="location" value="campus" id="locationCampus"> On TU Delft Campus<br>
                     <input type="radio" name="location" value="delft" id="locationDelft"> Delft, off campus<br>
                     <input type="radio" name="location" value="zuidholland" id="locationZuidHolland"> Elsewhere in Zuid-Holland<br>
@@ -103,7 +104,7 @@
         
         <div class="questioncontainer">
             <div class="openquestion">
-                <h3>What is your nationality? *</h3>
+                <h3>5. What is your nationality? *</h3>
                 <textarea rows="4" cols = "50" id="nationalityInput" required></textarea>
 
             </div>
@@ -120,7 +121,7 @@
             
             <div class="questioncontainer">
               <div class="mcquestion">
-                <h3>Open How often are you on campus? *</h3>
+                <h3>6. Open How often are you on campus? *</h3>
                 <input type="radio" name="campusVisits" value="more5"> ≥ 5 times a week<br>
                 <input type="radio" name="campusVisits" value="14times"> 1-4 times a week<br>
                 <input type="radio" name="campusVisits" value="lessonce"> Less than once a week<br>
@@ -134,7 +135,7 @@
               <!-- Activities on Campus -->
 
               <div class="questioncontainer">
-              <h3>What activities do you partake on campus? (multiple options possible) *</h3>
+              <h3>7. What activities do you partake on campus? (multiple options possible) *</h3>
               <data-valuem action="">
                 <input type="checkbox" id="study" name="activity" value="study">
                 <label for="study" data-value="study">Study related activities</label><br>
@@ -163,7 +164,7 @@
               <!-- Faculty -->
                 <div class="questioncontainer">
               <div class="mcquestion">
-                <h3>At which faculty are you studying/working, or have you studied/worked? *</h3>
+                <h3>8. At which faculty are you studying/working, or have you studied/worked? *</h3>
                 <input type="radio" name="faculty" value="abe"> Architecture and the Built Environment<br>
                 <input type="radio" name="faculty" value="ceg"> Civil Engineering and Geosciences<br>
                 <input type="radio" name="faculty" value="eemc"> Electrical Engineering, Mathematics and Computer Science<br>
@@ -182,7 +183,7 @@
         
         <div class="questioncontainer">
         <div class="mcquestion">
-            <h3>What kind of transportation mode do you use most often when travelling to and on campus? *</h3>
+            <h3>9. What kind of transportation mode do you use most often when travelling to and on campus? *</h3>
             <input type="radio" name="transport" value="bike"> Bike<br>
             <input type="radio" name="transport" value="car"> Car<br>
             <input type="radio" name="transport" value="public_transport"> Public transport<br>
@@ -196,8 +197,8 @@
         <br>
 
         <div class="questioncontainer">
-        <p>Please share any specific aspects of your campus experience that you would like to highlight, such as the variety of facilities available, 
-            the accessibility of services, or something you would suggest to improve your experience on campus</p>
+        <h3>10. Please share any specific aspects of your campus experience that you would like to highlight, such as the variety of facilities available, 
+            the accessibility of services, or something you would suggest to improve your experience on campus</h3>
         <div class="openquestion">
             <textarea rows="4" cols="50" id="campusExperience" required></textarea>
         </div>
@@ -207,29 +208,335 @@
 
         
         <button onclick="showPage('personalPage')">Previous</button>
-        <button id="campusButton" disabled title= "" onclick="showPage('ratingMapsPage')">Next</button>
+        <button id="campusButton" disabled title= "" onclick="showPage('mapUsePage')">Next</button>
         
         </div>
 
+        <div id="mapUsePage" class="page" style="display:none">
+            <h2>Part C: Question about your use of a campus map</h2>
+            
+<p> * Required</p>
+            <div class="questioncontainer">
+                <h3>11.	For which purpose would you use a campus map primarily? *</h3><br>
+                <div class="mcquestion">
+                    <input  id="purposePlaces" type="radio" name="purpose" value="places"> Finding places (faculties, facilities, rooms, etc.)<br>
+                    <input  id="purposeNavigation" type="radio" name="purpose" value="navigation"> Navigating on campus (To find the best/asted route from A to B)<br>
+                    <input  id="purposeDiscovering" type="radio" name="purpose" value="discovering"> Learning new things about the campus or places<br>
+                    <input  id="otherPurpose" type="radio" name="purpose" value="purposeOther"> Other
+                    <input  name="purposeOther" id="purposeOtherInput" placeholder="Please specify"> <br>
+                </div> 
+                </div><br>
+
+                <button onclick="showPage('campusPage')">Previous</button>
+                <button id="mapUseButton" disabled title="" onclick="showPage('ratingMapsPage')">Next</button>
+        </div>
+
+
         <div id="ratingMapsPage" class="page" style="display:none">
-            <h2>Part C: Questions about your preferences for campus maps</h2>
+            <h2>Part D: Questions about your preferences for campus maps</h2>
             
 
             <div class = "questioncontainer">
             <h3> Design and content</h3>
             <p>In this part you will be asked to rate the maps of 5 different campuses in the Netherlands. The following universities were chosen: <br><br>
-                1.	Wageningen University & Research<br>
-                2.	Vrije Universiteit Amsterdam<br>
-                3.	Eindhoven University of Technology <br>
-                4.	Erasmus University Rotterdam <br>
-                5.	Delft University of Technology <br><br>
+                1.	Delft University of Technology <br><br>
+                2.	Wageningen University & Research<br>
+                3.	Vrije Universiteit Amsterdam<br>
+                4.	Eindhoven University of Technology <br>
+                5.	Erasmus University Rotterdam <br>
+                
                 
             You will rate each map on its content and presentation.</p></div>
 
-            <button onclick="showPage('campusPage')">Previous</button>
-            <button id="ratingMapsButton" onclick="showPage('WagPage')">Next</button>
+            <button onclick="showPage('mapUsePage')">Previous</button>
+            <button id="ratingMapsButton" onclick="showPage('DelftPage')">Next</button>
 
         </div>
+
+        <div id="DelftPage" class="page" style="display:none">
+            <div class="sidebar">
+                <p> click here to view the map</p>
+                <img src="Delft_plattegrond.png" alt="Delftmap" class="small-image" data-target="delft-enlarged">
+            </div>
+
+            <div class="enlarged-image-container2" id="delft-enlarged">
+                <img src="Delft_plattegrond.png" alt="Delftmap" class="enlarged-image">
+            <p2>Click on the image to hide</p2>
+            </div>  
+
+            <div class="container4">
+            <h2>Delft Univeristy of Technology</h2>
+            <p>Rate the map of Delft University of Technology on its content and presentation, keeping in mind the purpose a campus map has to you. 
+                <br><br>You can view the map at any moment by clicking the button in the top right corner.</p>
+        <!-- Map image Delft   -->
+        <img src="Delft_plattegrond.png" alt="Delftmap"  height="auto" class="enlarge">
+        <p2>Click on the image to zoom in/out</p2>
+        
+            </div>
+            
+            
+            <br>
+
+
+        <div class="container3">
+            <h2>Familiarity</h2><br>
+            <div class="questioncontainer">
+                <h3>12. To what extent are you familiar with this map? *</h3><br>
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                        <input type="range" min="1" max="5" value="3" class="slider" id="slider_familiarity_Delft">
+                        <div class="slider-labels">
+                            <span class="slider-label" data-value="5">5. I use it daily </span>
+                            <span class="slider-label" data-value="4">4. I use it sometimes</span>
+                            <span class="slider-label" data-value="3">3. I have used it </span>
+                            <span class="slider-label" data-value="2">2. I have seen it</span>
+                            <span class="slider-label" data-value="1">1. I have never seen it</span>
+                        </div>
+                    </div>
+                </div>
+
+                </div>  
+            </div>
+        
+        
+        <!-- Content and org  -->
+            <div class="container3">
+            <h2>Content and organization</h2><br>
+            <div class="questioncontainer">
+                <h3>13. How would you rate the layout of the page? *</h3><br>
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                        <input type="range" min="1" max="5" value="3" class="slider" id="slider_layout_Delft">
+                        <div class="slider-labels">
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <input type="text" id="layout_Delft" type="text" placeholder="Please explain your answer in a few words">
+            </div>
+        
+            <div class="questioncontainer">
+                <h3>14. How would you rate the choice to display the map in 2D, with regards to the clarity of the map? *</h3><br>
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                        <input type="range" min="1" max="5" value="3" class="slider" id="slider_3D_clarity_Delft">
+                        <div class="slider-labels">
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
+                        </div>
+                    </div>
+                </div>
+                <input type="text" id="threeD_clarity_Delft" type="text" placeholder="Please explain your answer in a few words">
+            </div>
+        
+            <div class="questioncontainer">
+                <h3>15. Does this map contain the information you usually look for? *</h3><br>
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                        <input type="range" min="1" max="5" value="3" class="slider" id="slider_info_Delft">
+                        <div class="slider-labels">
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
+        
+                        </div>
+                    </div>
+                </div>
+                <input type="text" id="info_Delft" type="text" placeholder="Please explain your answer in a few words">
+            </div>
+        </div>
+            <br>
+        
+        <!-- LoD -->
+        
+        <div class="container3">
+        <h2>Level of detail</h2><br>
+            <div class="questioncontainer">
+                
+                <div class="mcquestion">
+                    <h3>16.	To what extent is the scale of the map appropriate for the purpose of the map? *</h3>
+                    <input type="radio" name="scaleDelft" value="scale_effective"> The scale effectively covers the necessary area and level of detail<br>
+                    <input type="radio" name="scaleDelft" value="too_zoomed_in"> It is too zoomed in, therefore the area covered is too small<br>
+                    <input type="radio" name="scaleDelft" value="too_zoomed_out"> It is too zoomed out, therefore the level of detail is too low<br>
+                </div>
+            </div>
+        </div>
+            <br>
+        
+        <!-- Legend  -->
+            <div class="container3">
+            <h2>Legend</h2><br>
+        
+            <div class="questioncontainer">
+                <h3>17. How would you rate the completeness of information in the legend? *</h3><br>
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                        <input type="range" min="1" max="5" value="3" class="slider" id="slider_legend_completeness_Delft">
+                        <div class="slider-labels">
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
+                        </div>
+                    </div>
+                </div>
+                <input type="text" id="legend_clarity_Delft" type="text" placeholder="Please explain your answer in a few words">
+            </div>
+        
+            <div class="questioncontainer">
+                <h3>18. How would you rate the clarity of the legend? *</h3>
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                        <input type="range" min="1" max="5" value="3" class="slider" id="slider_legend_clarity_Delft">
+                        <div class="slider-labels">
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
+                        </div>
+                    </div>
+                </div>
+                <input type="text" id="legend_content_Delft" type="text" placeholder="Please explain your answer in a few words">
+            </div> 
+            </div> 
+            <br>
+        
+        
+        <!-- Text -->
+            <div class="container3">
+            <h2>Text</h2><br>
+            <div class="questioncontainer">
+                <h3>19. How would you rate the relevance of the text on the page? *</h3><br>
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                        <input type="range" min="1" max="5" value="3" class="slider" id="slider_text_clarity_Delft">
+                        <div class="slider-labels">
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
+                        </div>
+                    </div>
+                </div>
+                <input type="text" id="text_clarity_Delft" type="text" placeholder="Please explain your answer in a few words">
+            </div>
+        
+        
+            <div class="questioncontainer">
+                <h3>20. How would you rate the visualization of the text (size, font, color)? *</h3><br>
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                        <input type="range" min="1" max="5" value="3" class="slider" id="slider_text_visualization_Delft">
+                        <div class="slider-labels">
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
+                        </div>
+                    </div>
+                </div>
+                <input type="text" id="text_visualization_Delft" type="text" placeholder="Please explain your answer in a few words">
+            </div>
+            </div>
+            <br>
+        
+        <!-- Use of color              -->
+        
+            <div class="container3">
+            <h2>Use of color</h2><br>
+            <div class="questioncontainer">
+                <h3>21. How would you rate the use of color (eg. trees, roads, buildings) in making the map visually appealing? *</h3><br>
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                        <input type="range" min="1" max="5" value="3" class="slider" id="slider_color_clarity_Delft">
+                        <div class="slider-labels">
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
+                        </div>
+                    </div>
+                </div>
+                <input type="text" id="color_clarity_Delft" type="text" placeholder="Please explain your answer in a few words">
+            </div>
+        
+            <div class="questioncontainer">
+                <h3>22. How would you rate the use of color in being appropriate for the elements they represent (eg trees, roads, buildings)? *</h3><br>
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                        <input type="range" min="1" max="5" value="3" class="slider" id="slider_color_meaning_Delft">
+                        <div class="slider-labels">
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
+                        </div>
+                    </div>
+                </div>
+                <input type="text" id="color_meaning_Delft" type="text" placeholder="Please explain your answer in a few words">
+            </div>
+            </div>
+            <br>
+        
+        <!-- Use of symbols  -->
+        
+            <div class="container3">
+            <h2>Use of symbols</h2><br>
+            <div class="questioncontainer">
+                <h3>23. How would you rate the choice of symbols in being appropriate for the elements they represent (eg. buildings, facilities)? *</h3><br>
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                        <input type="range" min="1" max="5" value="3" class="slider" id="slider_symbols_clarity_Delft">
+                        <div class="slider-labels">
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
+                        </div>
+                    </div>
+                </div>
+                <input type="text" id="symbols_clarity_Delft" type="text" placeholder="Please explain your answer in a few words">
+            </div>
+        
+            <div class="questioncontainer">
+                <h3>24. How would you rate the impact of the symbols on the clarity of the map? *</h3><br>
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                        <input type="range" min="1" max="5" value="3" class="slider" id="slider_symbols_meaning_Delft">
+                        <div class="slider-labels">
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
+                        </div>
+                    </div>
+                </div>
+                <input type="text" id="slider_symbols_meaning_Delft" type="text" placeholder="Please explain your answer in a few words">
+            </div>
+            </div>
+        
+            <button onclick="showPage('ratingMapsPage')">Previous</button>
+            <button id="DelftButton" onclick="showPage('WagPage')">Next</button>
+            
+            </div>
 
         <div id="WagPage" class="page" style="display:none">
             <div class="sidebar">
@@ -243,7 +550,8 @@
             </div>
             <div class="container4">
             <h2>Wageningen University & Research</h2>
-            <p>Rate the map of Wageningen University & Research on its content and presentation</p>
+            <p>Rate the map of Wageningen University & Research on its content and presentation, keeping in mind the purpose a campus map has to you. 
+                <br><br>You can view the map at any moment by clicking the button in the top right corner.</p>
 <!-- Map image Wageningen    -->
 <img src="Wageningen_plattegrond.png" alt="Wageningen map"  height="auto" class="enlarge">
 <p2>Click on the image to zoom in/out</p2>
@@ -260,57 +568,57 @@
             <div class="container3">
             <h2>Content and organization</h2><br>
             <div class="questioncontainer">
-                <h3>1. In what way does the layout of the page influence how you navigate the map and find what you are interested in? *</h3><br>
+                <h3>25. How would you rate the layout of the page? *</h3><br>
                 <div class="slider-container">
                     <div class="slider-wrapper">
                         <input type="range" min="1" max="5" value="3" class="slider" id="slider_layout_Wag">
                         <div class="slider-labels">
-                            <span class="slider-label" data-value="5">5. The page layout is clear and guides me effectively to find the information I need.</span>
-                            <span class="slider-label" data-value="4">4.</span>
-                            <span class="slider-label" data-value="3">3. Neutral </span>
-                            <span class="slider-label" data-value="2">2. </span>
-                            <span class="slider-label" data-value="1">1. The page layout is unclear and I don't know where to look</span>
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                           
                         </div>
                         
                     </div>
                 </div> <br><br>
-                <input type="text" id="layout_Wag" type="text" placeholder="Please explain your answer in a few words" ">
+                <input type="text" id="layout_Wag" type="text" placeholder="Please explain your answer in a few words">
             </div>
 
             <div class="questioncontainer">
-                <h3>2. To what extent does the choice to display the map in 3D impact the clarity of the map? *</h3><br>
+                <h3>26. How would you rate the choice to display the map in 3D, with regards to the clarity of the map?  *</h3><br>
                 <div class="slider-container">
                     <div class="slider-wrapper">
                         <input type="range" min="1" max="5" value="3" class="slider" id="slider_3D_clarity_Wag">
                         <div class="slider-labels">
-                            <span class="slider-label" data-value="5">5. The choice of 3D significantly improves clarity</span>
-                            <span class="slider-label" data-value="4">4. </span>
-                            <span class="slider-label" data-value="3">3. Neutral </span>
-                            <span class="slider-label" data-value="2">2. </span>
-                            <span class="slider-label" data-value="1">1. The choice of 3D significantly hinders clarity</span>
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                         </div>
                     </div>
                 </div>
-                <input type="text" id="threeD_clarity_Wag" type="text" placeholder="Please explain" ">
+                <input type="text" id="threeD_clarity_Wag" type="text" placeholder="Please explain your answer in a few words">
             </div>
 
             <div class="questioncontainer">
-                <h3>3. If this was your campus, would this map contain the information you usually look for? *</h3><br>
+                <h3>27. If this was your campus, how would you rate the completeness of information of this map? *</h3><br>
                 <div class="slider-container">
                     <div class="slider-wrapper">
                         <input type="range" min="1" max="5" value="3" class="slider" id="slider_info_Wag">
                         <div class="slider-labels">
-                            <span class="slider-label" data-value="5">5. Yes, this map provides all the essential information I need.</span>
-                                <span class="slider-label" data-value="4">4. </span>
-                                <span class="slider-label" data-value="3">3. Neutral </span>
-                                <span class="slider-label" data-value="2">2. </span>
-                                <span class="slider-label" data-value="1">1. This map lacks essential information and is not useful to me.</span>
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
 
                         </div>
                     </div>
                 </div>
-                <input type="text" id="info_Wag" type="text" placeholder="Please explain your answer in a few words" ">
+                <input type="text" id="info_Wag" type="text" placeholder="Please explain your answer in a few words">
             </div>
         </div>
             <br>
@@ -322,7 +630,7 @@
             <div class="questioncontainer">
                 
                 <div class="mcquestion">
-                    <h3>4.	To what extent is the scale of the map appropriate for the purpose of the map? *</h3>
+                    <h3>28.	To what extent is the scale of the map appropriate for the purpose of the map? *</h3>
                     <input type="radio" name="scaleWag" value="scale_effective"> The scale effectively covers the necessary area and level of detail<br>
                     <input type="radio" name="scaleWag" value="too_zoomed_in"> It is too zoomed in, therefore the area covered is too small<br>
                     <input type="radio" name="scaleWag" value="too_zoomed_out"> It is too zoomed out, therefore the level of detail is too low<br>
@@ -336,16 +644,16 @@
             <h2>Legend</h2><br>
 
             <div class="questioncontainer">
-                <h3>5. To what extent does the legend impact the clarity of the map? *</h3><br>
+                <h3>29. How would you rate the completeness of information in the legend? *</h3><br>
                 <div class="slider-container">
                     <div class="slider-wrapper">
-                        <input type="range" min="1" max="5" value="3" class="slider" id="slider_legend_clarity_Wag">
+                        <input type="range" min="1" max="5" value="3" class="slider" id="slider_legend_completeness_Wag">
                         <div class="slider-labels">
-                            <span class="slider-label" data-value="5">5. The legend effectively clarifies all symbols and elements, improving overall clarity.</span>
-                            <span class="slider-label" data-value="4">4. </span>
-                            <span class="slider-label" data-value="3">3. Neutral </span>
-                            <span class="slider-label" data-value="2">2. </span>
-                            <span class="slider-label" data-value="1">1. The legend provides conflicting information about symbols and elements, reducing clarity</span>
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                         </div>
                     </div>
                 </div>
@@ -353,20 +661,20 @@
             </div>
 
             <div class="questioncontainer">
-                <h3>6. To what extent does the legend contain all the information you need? *</h3>
+                <h3>30. How would you rate the clarity of the legend? *</h3>
                 <div class="slider-container">
                     <div class="slider-wrapper">
-                        <input type="range" min="1" max="5" value="3" class="slider" id="slider_legend_content_Wag">
+                        <input type="range" min="1" max="5" value="3" class="slider" id="slider_legend_clarity_Wag">
                         <div class="slider-labels">
-                            <span class="slider-label" data-value="5">5. The legend contains all the necessary information I need to understand the map.</span>
-                            <span class="slider-label" data-value="4">4. </span>
-                            <span class="slider-label" data-value="3">3. Neutral </span>
-                            <span class="slider-label" data-value="2">2. </span>
-                            <span class="slider-label" data-value="1">1. This legend lacks essential information and is not useful to me.</span>
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                         </div>
                     </div>
                 </div>
-                <input type="text" id="legend_content_Wag" type="text" placeholder="Please explain your answer in a few words" ">
+                <input type="text" id="legend_content_Wag" type="text" placeholder="Please explain your answer in a few words">
             </div> 
             </div> 
             <br>
@@ -376,38 +684,38 @@
             <div class="container3">
             <h2>Text</h2><br>
             <div class="questioncontainer">
-                <h3>7. To what extent does the text impact clarity of the map? *</h3><br>
+                <h3>31. How would you rate the relevance of the text on the page?  *</h3><br>
                 <div class="slider-container">
                     <div class="slider-wrapper">
                         <input type="range" min="1" max="5" value="3" class="slider" id="slider_text_clarity_Wag">
                         <div class="slider-labels">
-                            <span class="slider-label" data-value="5">5. The text significantly contributes to clarity of the map (e.g., explaining, adding information)</span>
-                            <span class="slider-label" data-value="4">4. </span>
-                            <span class="slider-label" data-value="3">3. Neutral</span>
-                            <span class="slider-label" data-value="2">2. </span>
-                            <span class="slider-label" data-value="1">1. The text significantly reduces clarity of the map (e.g., providing unclear or unnecesary information)</span>
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                         </div>
                     </div>
                 </div>
-                <input type="text" id="text_clarity_Wag" type="text" placeholder="Please explain your answer in a few words" ">
+                <input type="text" id="text_clarity_Wag" type="text" placeholder="Please explain your answer in a few words">
             </div>
 
 
             <div class="questioncontainer">
-                <h3>8. To what extent does the visualization (font, color, size) of the text impact its meaning? *</h3><br>
+                <h3>32. How would you rate the visualization of the text (size, font, color)? *</h3><br>
                 <div class="slider-container">
                     <div class="slider-wrapper">
                         <input type="range" min="1" max="5" value="3" class="slider" id="slider_text_visualization_Wag">
                         <div class="slider-labels">
-                            <span class="slider-label" data-value="5">5. The color and size of the text effectively enhance its meaning</span>
-                            <span class="slider-label" data-value="4">4. </span>
-                            <span class="slider-label" data-value="3">3. </span>
-                            <span class="slider-label" data-value="2">2. </span>
-                            <span class="slider-label" data-value="1">1. The size and color conflict with the meaning of the text, making it difficult to interpret</span>
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                         </div>
                     </div>
                 </div>
-                <input type="text" id="text_visualization_Wag" type="text" placeholder="Please explain your answer in a few words" ">
+                <input type="text" id="text_visualization_Wag" type="text" placeholder="Please explain your answer in a few words">
             </div>
             </div>
             <br>
@@ -417,37 +725,37 @@
             <div class="container3">
             <h2>Use of color</h2><br>
             <div class="questioncontainer">
-                <h3>9. To what extent does the use of color (e.g. for trees, roads, buildings) impact the clarity of the map? *</h3><br>
+                <h3>33. How would you rate the use of color (eg. trees, roads, buildings) in making the map visually appealing? *</h3><br>
                 <div class="slider-container">
                     <div class="slider-wrapper">
                         <input type="range" min="1" max="5" value="3" class="slider" id="slider_color_clarity_Wag">
                         <div class="slider-labels">
-                            <span class="slider-label" data-value="5">5. The use of color significantly enhances the clarity</span>
-                            <span class="slider-label" data-value="4">4. </span>
-                            <span class="slider-label" data-value="3">3. Neutral</span>
-                            <span class="slider-label" data-value="2">2. </span>
-                            <span class="slider-label" data-value="1">1. The use of color significantly detracts from clarity</span>
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                         </div>
                     </div>
                 </div>
-                <input type="text" id="color_clarity_Wag" type="text" placeholder="Please explain your answer in a few words" ">
+                <input type="text" id="color_clarity_Wag" type="text" placeholder="Please explain your answer in a few words">
             </div>
 
             <div class="questioncontainer">
-                <h3>10. To what extent does the use of color (e.g. for trees, roads, buildings) impact the meaning of the map? *</h3><br>
+                <h3>34. How would you rate the use of color in being appropriate for the elements they represent (eg trees, roads, buildings)? *</h3><br>
                 <div class="slider-container">
                     <div class="slider-wrapper">
                         <input type="range" min="1" max="5" value="3" class="slider" id="slider_color_meaning_Wag">
                         <div class="slider-labels">
-                            <span class="slider-label" data-value="5">5. The use of color significantly enhances the meaning of the elements in the map</span>
-                            <span class="slider-label" data-value="4">4. </span>
-                            <span class="slider-label" data-value="3">3. Neutral</span>
-                            <span class="slider-label" data-value="2">2. </span>
-                            <span class="slider-label" data-value="1">1. The use of color significantly conflicts with the meaning of the elements in the map</span>
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                         </div>
                     </div>
                 </div>
-                <input type="text" id="color_meaning_Wag" type="text" placeholder="Please explain your answer in a few words" ">
+                <input type="text" id="color_meaning_Wag" type="text" placeholder="Please explain your answer in a few words">
             </div>
             </div>
             <br>
@@ -457,41 +765,41 @@
             <div class="container3">
             <h2>Use of symbols</h2><br>
             <div class="questioncontainer">
-                <h3>11. To what extent does the choice of symbols impact their clarity? *</h3><br>
+                <h3>35. How would you rate the choice of symbols in being appropriate for the elements they represent (eg. buildings, facilities)? *</h3><br>
                 <div class="slider-container">
                     <div class="slider-wrapper">
                         <input type="range" min="1" max="5" value="3" class="slider" id="slider_symbols_clarity_Wag">
                         <div class="slider-labels">
-                            <span class="slider-label" data-value="5">5. The symbols are very clear</span>
-                            <span class="slider-label" data-value="4">4. </span>
-                            <span class="slider-label" data-value="3">3. Neutral</span>
-                            <span class="slider-label" data-value="2">2. </span>
-                            <span class="slider-label" data-value="1">1. The symbols are confusing and not intuitive, making them difficult to understand</span>
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                         </div>
                     </div>
                 </div>
-                <input type="text" id="symbols_clarity_Wag" type="text" placeholder="Please explain your answer in a few words" ">
+                <input type="text" id="symbols_clarity_Wag" type="text" placeholder="Please explain your answer in a few words">
             </div>
 
             <div class="questioncontainer">
-                <h3>12. To what extent does the use of symbols impact the meaning of the map? *</h3><br>
+                <h3>36. How would you rate the impact of the symbols on the clarity of the map? *</h3><br>
                 <div class="slider-container">
                     <div class="slider-wrapper">
                         <input type="range" min="1" max="5" value="3" class="slider" id="slider_symbols_meaning_Wag">
                         <div class="slider-labels">
-                            <span class="slider-label" data-value="5">5. The use of symbols effectively enhances the meaning of the map</span>
-                            <span class="slider-label" data-value="4">4. </span>
-                            <span class="slider-label" data-value="3">3. Neutral</span>
-                            <span class="slider-label" data-value="2">2. </span>
-                            <span class="slider-label" data-value="1">1. The symbols are confusing, making it difficult to interpret the meaning of the map</span>
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                         </div>
                     </div>
                 </div>
-                <input type="text" id="slider_symbols_meaning_Wag" type="text" placeholder="Please explain your answer in a few words" ">
+                <input type="text" id="slider_symbols_meaning_Wag" type="text" placeholder="Please explain your answer in a few words">
             </div>
             </div>
 
-            <button onclick="showPage('ratingMapsPage')">Previous</button>
+            <button onclick="showPage('DelftPage')">Previous</button>
             <button id="WagButton" onclick="showPage('VUPage')">Next</button>
             
             </div>
@@ -511,7 +819,8 @@
 
             <div class="container4">
             <h2>Vrije Universiteit Amsterdam</h2>
-            <p>Rate the map of Vrije Universiteit Amsterdam on its content and presentation</p>
+            <p>Rate the map of Vrije Universiteit Amsterdam on its content and presentation, keeping in mind the purpose a campus map has to you. 
+                <br><br>You can view the map at any moment by clicking the button in the top right corner.</p>
 <!-- Map image VU    -->
 <img src="Amsterdam_plattegrond.png" alt="VU map"  height="auto" class="enlarge">
 <p2>Click on the image to zoom in/out</p2>
@@ -521,57 +830,57 @@
             <div class="container3">
             <h2>Content and organization</h2><br>
             <div class="questioncontainer">
-                <h3>1. In what way does the layout of the page influence how you navigate the map and find what you are interested in? *</h3><br>
+                <h3>37. How would you rate the layout of the page? *</h3><br>
                 <div class="slider-container">
                     <div class="slider-wrapper">
                         <input type="range" min="1" max="5" value="3" class="slider" id="slider_layout_VU">
                         <div class="slider-labels">
-                            <span class="slider-label" data-value="5">5. The page layout is clear and guides me effectively to find the information I need.</span>
-                            <span class="slider-label" data-value="4">4.</span>
-                            <span class="slider-label" data-value="3">3. Neutral </span>
-                            <span class="slider-label" data-value="2">2. </span>
-                            <span class="slider-label" data-value="1">1. </span>
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                         </div>
                     </div>
                 </div>
-                <input type="text" id="layout_VU" type="text" placeholder="Please explain your answer in a few words" ">
+                <input type="text" id="layout_VU" type="text" placeholder="Please explain your answer in a few words">
             </div>
 
             <div class="questioncontainer">
-                <h3>2. To what extent does the choice to display the map in 2D impact the clarity of the map? *</h3><br>
+                <h3>38. How would you rate the choice to display the map in 2D, with regards to the clarity of the map?  *</h3><br>
                 <div class="slider-container">
                     <div class="slider-wrapper">
                         <input type="range" min="1" max="5" value="3" class="slider" id
                         ="slider_3D_clarity_VU">
                         <div class="slider-labels">
-                            <span class="slider-label" data-value="5">5. The choice of 2D significantly improves clarity</span>
-                            <span class="slider-label" data-value="4">4. </span>
-                            <span class="slider-label" data-value="3">3. Neutral </span>
-                            <span class="slider-label" data-value="2">2. </span>
-                            <span class="slider-label" data-value="1">1. The choice of 2D significantly hinders clarity</span>
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                         </div>  
                     </div>  
                 </div>
-                <input type="text" id="threeD_clarity_VU" type="text" placeholder="Please explain" ">
+                <input type="text" id="threeD_clarity_VU" type="text" placeholder="Please explain your answer in a few words">
             </div>
 
             <div class="questioncontainer">
-                <h3>3. If this was your campus, would this map contain the information you usually look for? *</h3><br>
+                <h3>39. If this was your campus, how would you rate the completeness of information of this map? *</h3><br>
                 <div class="slider-container">
                     <div class="slider-wrapper">
-                        <input type="range" min="0" max="5" value="3" class="slider" id
+                        <input type="range" min="1" max="5" value="3" class="slider" id
                         ="slider_info_VU">
 
                         <div class="slider-labels">
-                            <span class="slider-label" data-value="5">5. Yes, this map provides all the essential information I need.</span>
-                            <span class="slider-label" data-value="4">4. </span>
-                            <span class="slider-label" data-value="3">3. </span>
-                            <span class="slider-label" data-value="2">2. </span>
-                            <span class="slider-label" data-value="1">1. This map lacks essential information and is not useful to me.</span>
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                         </div>  
                     </div>  
                 </div>
-                <input type="text" id="info_VU" type="text" placeholder="Please explain your answer in a few words" ">
+                <input type="text" id="info_VU" type="text" placeholder="Please explain your answer in a few words">
             </div> 
         </div>
             <br>
@@ -584,7 +893,7 @@
                 
                 <div class="mcquestion
                 ">
-                    <h3>4.	To what extent is the scale of the map appropriate for the purpose of the map? *</h3>
+                    <h3>40.	To what extent is the scale of the map appropriate for the purpose of the map? *</h3>
                     <input type="radio" name="scaleVU" value="scale_effective"> The scale effectively covers the necessary area and level of detail<br>
                     <input type="radio" name="scaleVU" value="too_zoomed_in"> It is too zoomed in, therefore the area covered is too small<br>
                     <input type="radio" name="scaleVU" value="too_zoomed_out"> It is too zoomed out, therefore the level of detail is too low<br>
@@ -599,18 +908,18 @@
             <div class="container3">
             <h2>Legend</h2><br>
             <div class="questioncontainer">
-                <h3>5. To what extent does the legend impact the clarity of the map? *</h3><br>
+                <h3>41. How would you rate the completeness of information in the legend? *</h3><br>
                 <div class="slider-container">
                     <div class="slider-wrapper">
                         <input type="range" min="1" max="5" value="3" class="slider" id
-                        ="slider_legend_clarity_VU">
+                        ="slider_legend_completeness_VU">
 
                         <div class="slider-labels">
-                            <span class="slider-label" data-value="5">5. The legend effectively clarifies all symbols and elements, improving overall clarity.</span>
-                            <span class="slider-label" data-value="4">4. </span>
-                            <span class="slider-label" data-value="3">3. Neutral </span>
-                            <span class="slider-label" data-value="2">2. </span>
-                            <span class="slider-label" data-value="1">1. The legend provides conflicting information about symbols and elements, reducing clarity</span>
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                         </div>  
                     </div>
                 </div>
@@ -618,22 +927,22 @@
             </div>
 
             <div class="questioncontainer">
-                <h3>6. To what extent does the legend contain all the information you need? *</h3><br>
+                <h3>42. How would you rate the clarity of the legend? *</h3><br>
                 <div class="slider-container">
                     <div class="slider-wrapper">
                         <input type="range" min="1" max="5" value="3" class="slider" id
-                        ="slider_legend_content_VU">
+                        ="slider_legend_clarity_VU">
 
                         <div class="slider-labels">
-                            <span class="slider-label" data-value="5">5. The legend contains all the necessary information I need to understand the map.</span>
-                            <span class="slider-label" data-value="4">4. </span>
-                            <span class="slider-label" data-value="3">3. Neutral</span>
-                            <span class="slider-label" data-value="2">2. </span>
-                            <span class="slider-label" data-value="1">1. This legend lacks essential information and is not useful to me.</span>
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                         </div>  
                     </div>
                 </div>  
-                <input type="text" id="legend_content_VU" type="text" placeholder="Please explain your answer in a few words" ">
+                <input type="text" id="legend_content_VU" type="text" placeholder="Please explain your answer in a few words">
             </div>
 
         </div>
@@ -644,41 +953,41 @@
                 <div class="container3">
                 <h2>Text</h2><br>
                 <div class="questioncontainer">
-                    <h3>7. To what extent does the text impact clarity of the map? *</h3><br>
+                    <h3>43. How would you rate the relevance of the text on the page?  *</h3><br>
                     <div class="slider-container">
                         <div class="slider-wrapper">
                             <input type="range" min="1" max="5" value="3" class="slider" id
                             ="slider_text_clarity_VU">
 
                             <div class="slider-labels">
-                                <span class="slider-label" data-value="5">5. The text significantly contributes to clarity of the map (e.g., explaining, adding information)</span>
-                                <span class="slider-label" data-value="4">4. </span>
-                                <span class="slider-label" data-value="3">3. Neutral</span>
-                                <span class="slider-label" data-value="2">2. </span>
-                                <span class="slider-label" data-value="1">1. The text significantly reduces clarity of the map (e.g., providing unclear or unnecesary information)</span>
+                                <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                             </div>  
                         </div>  
                     </div>
-                    <input type="text" id="text_clarity_VU" type="text" placeholder="Please explain your answer in a few words" ">
+                    <input type="text" id="text_clarity_VU" type="text" placeholder="Please explain your answer in a few words">
                 </div>
 
                 <div class="questioncontainer">
-                    <h3>8. To what extent does the visualization (font, color, size) of the text impact its meaning? *</h3><br>
+                    <h3>44. How would you rate the visualization of the text (size, font, color)? *</h3><br>
                     <div class="slider-container">
                         <div class="slider-wrapper">
                             <input type="range" min="1" max="5" value="3" class="slider" id
                             ="slider_text_visualization_VU">
                         
                             <div class="slider-labels">
-                                <span class="slider-label" data-value="5">5. The color and size of the text effectively enhance its meaning</span>
-                                <span class="slider-label" data-value="4">4. </span>
-                                <span class="slider-label" data-value="3">3. Neutral</span>
-                                <span class="slider-label" data-value="2">2. </span>
-                                <span class="slider-label" data-value="1">1. The size and color conflict with the meaning of the text, making it difficult to interpret</span>
+                                <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                             </div>  
                         </div>  
                     </div>
-                    <input type="text" id="text_visualization_VU" type="text" placeholder="Please explain your answer in a few words" ">
+                    <input type="text" id="text_visualization_VU" type="text" placeholder="Please explain your answer in a few words">
 
                 </div>
                 </div>
@@ -690,41 +999,41 @@
                     <div class="container3">
                     <h2>Use of color</h2><br>
                     <div class="questioncontainer">
-                        <h3>9. To what extent does the use of color (e.g. for trees, roads, buildings) impact the clarity of the map? *</h3><br>
+                        <h3>45. How would you rate the use of color (eg. trees, roads, buildings) in making the map visually appealing? *</h3><br>
                         <div class="slider-container">
                             <div class="slider-wrapper">
                                 <input type="range" min="1" max="5" value="3" class="slider" id
                                 ="slider_color_clarity_VU">
 
                                 <div class="slider-labels">
-                                    <span class="slider-label" data-value="5">5. The use of color significantly enhances the clarity</span>
-                                    <span class="slider-label" data-value="4">4. </span>
-                                    <span class="slider-label" data-value="3">3. Neutral</span>
-                                    <span class="slider-label" data-value="2">2. </span>
-                                    <span class="slider-label" data-value="1">1. The use of color significantly detracts from clarity</span>
+                                    <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                                 </div>  
                             </div>
                         </div>
-                        <input type="text" id="color_clarity_VU" type="text" placeholder="Please explain your answer in a few words" ">
+                        <input type="text" id="color_clarity_VU" type="text" placeholder="Please explain your answer in a few words">
                     </div>
 
                     <div class="questioncontainer">
-                        <h3>10. To what extent does the use of color (e.g. for trees, roads, buildings) impact the meaning of the map? *</h3><br>
+                        <h3>56. How would you rate the use of color in being appropriate for the elements they represent (eg trees, roads, buildings)? *</h3><br>
                         <div class="slider-container">
                             <div class="slider-wrapper">
                                 <input type="range" min="1" max="5" value="3" class="slider" id
                                 ="slider_color_meaning_VU">
 
                                 <div class="slider-labels">
-                                    <span class="slider-label" data-value="5">5. The use of color significantly enhances the meaning of the elements in the map</span>
-                                    <span class="slider-label" data-value="4">4. </span>
-                                    <span class="slider-label" data-value="3">3. </span>
-                                    <span class="slider-label" data-value="2">2. </span>
-                                    <span class="slider-label" data-value="1">1. The use of color significantly conflicts with the meaning of the elements in the map</span>
+                                    <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                                 </div>
                             </div>
                         </div>
-                        <input type="text" id="color_meaning_VU" type="text" placeholder="Please explain your answer in a few words" ">
+                        <input type="text" id="color_meaning_VU" type="text" placeholder="Please explain your answer in a few words">
                     </div>
                     </div>
 
@@ -735,41 +1044,41 @@
                         <div class="container3">
                         <h2>Use of symbols</h2><br>
                         <div class="questioncontainer">
-                            <h3>11. To what extent does the choice of symbols impact their clarity? *</h3>
+                            <h3>57. How would you rate the choice of symbols in being appropriate for the elements they represent (eg. buildings, facilities)? *</h3>
                             <div class="slider-container">
                                 <div class="slider-wrapper">
                                     <input type="range" min="1" max="5" value="3" class="slider" id
                                     ="slider_symbols_clarity_VU">
 
                                     <div class="slider-labels">
-                                        <span class="slider-label" data-value="5">5. The symbols are very clear</span>
-                                        <span class="slider-label" data-value="4">4. </span>
-                                        <span class="slider-label" data-value="3">3. Neutral</span>
-                                        <span class="slider-label" data-value="2">2. </span>
-                                        <span class="slider-label" data-value="1">1. The symbols are confusing and not intuitive, making them difficult to understand</span>
+                                        <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                                     </div>
                                 </div>
                             </div>
-                            <input type="text" id="symbols_clarity_VU" type="text" placeholder="Please explain your answer in a few words" ">
+                            <input type="text" id="symbols_clarity_VU" type="text" placeholder="Please explain your answer in a few words">
                         </div>  
 
                         <div class="questioncontainer">
-                            <h3>12. To what extent does the use of symbols impact the meaning of the map? *</h3>
+                            <h3>58. How would you rate the impact of the symbols on the clarity of the map? *</h3>
                             <div class="slider-container">
                                 <div class="slider-wrapper">
                                     <input type="range" min="1" max="5" value="3" class="slider" id
                                     ="slider_symbols_meaning_VU">
 
                                     <div class="slider-labels">
-                                        <span class="slider-label" data-value="5">5. The use of symbols effectively enhances the meaning of the map</span>
-                                        <span class="slider-label" data-value="4">4. </span>
-                                        <span class="slider-label" data-value="3">3. Neutral</span>
-                                        <span class="slider-label" data-value="2">2. </span>
-                                        <span class="slider-label" data-value="1">1. The symbols are confusing, making it difficult to interpret the meaning of the map</span>
+                                       <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                                     </div>
                                 </div>  
                             </div>
-                            <input type="text" id="symbols_meaning_VU" type="text" placeholder="Please explain your answer in a few words" ">
+                            <input type="text" id="symbols_meaning_VU" type="text" placeholder="Please explain your answer in a few words">
                         </div>
                     </div>
 
@@ -791,7 +1100,8 @@
 
             <div class="container4">
             <h2>Eindhoven University of Technology</h2>
-            <p>Rate the map of Eindhoven University of Technology on its content and presentation</p>
+            <p>Rate the map of Eindhoven University of Technology on its content and presentation, keeping in mind the purpose a campus map has to you. 
+                <br><br>You can view the map at any moment by clicking the button in the top right corner.</p>
         <!-- Map image Eindhoven   -->
         <img src="Eindhoven_plattegrond.png" alt="Eindhovenmap"  height="auto" class="enlarge">
         <p2>Click on the image to zoom in/out</p2>
@@ -805,56 +1115,56 @@
             <div class="container3">
             <h2>Content and organization</h2><br>
             <div class="questioncontainer">
-                <h3>1. In what way does the layout of the page influence how you navigate the map and find what you are interested in? *</h3>
+                <h3>59. How would you rate the layout of the page? *</h3>
                 <div class="slider-container">
                     <div class="slider-wrapper">
                         <input type="range" min="1" max="5" value="3" class="slider" id="slider_layout_Eindhoven">
                         <div class="slider-labels">
-                            <span class="slider-label" data-value="5">5. The page layout is clear and guides me effectively to find the information I need.</span>
-                            <span class="slider-label" data-value="4">4.</span>
-                            <span class="slider-label" data-value="3">3. Neutral </span>
-                            <span class="slider-label" data-value="2">2. </span>
-                            <span class="slider-label" data-value="1">1. The page looks cluttered and confusing, and I don’t know where to look.</span>
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                         </div>
                         
                     </div>
                 </div>
-                <input type="text" id="layout_Eindhoven" type="text" placeholder="Please explain your answer in a few words" ">
+                <input type="text" id="layout_Eindhoven" type="text" placeholder="Please explain your answer in a few words">
             </div>
         
             <div class="questioncontainer">
-                <h3>2. To what extent does the choice to display the map in 2D impact the clarity of the map? *</h3>
+                <h3>60. How would you rate the choice to display the map in 2D, with regards to the clarity of the map?  *</h3>
                 <div class="slider-container">
                     <div class="slider-wrapper">
                         <input type="range" min="1" max="5" value="3" class="slider" id="slider_3D_clarity_Eindhoven">
                         <div class="slider-labels">
-                            <span class="slider-label" data-value="5">5. The choice of 2D significantly improves clarity</span>
-                            <span class="slider-label" data-value="4">4. </span>
-                            <span class="slider-label" data-value="3">3. Neutral</span>
-                            <span class="slider-label" data-value="2">2. </span>
-                            <span class="slider-label" data-value="1">1. The choice of 2D significantly hinders clarity</span>
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                         </div>
                     </div>
                 </div>
-                <input type="text" id="threeD_clarity_Eindhoven" type="text" placeholder="Please explain" ">
+                <input type="text" id="threeD_clarity_Eindhoven" type="text" placeholder="Please explain your answer in a few words">
             </div>
         
             <div class="questioncontainer">
-                <h3>3. If this was your campus, would this map contain the information you usually look for? *</h3>
+                <h3>61. If this was your campus, how would you rate the completeness of information of this map? *</h3>
                 <div class="slider-container">
                     <div class="slider-wrapper">
-                        <input type="range" min="0" max="5" value="3" class="slider" id="slider_info_Eindhoven">
+                        <input type="range" min="1" max="5" value="3" class="slider" id="slider_info_Eindhoven">
                         <div class="slider-labels">
-                            <span class="slider-label" data-value="5">5. Yes, this map provides all the essential information I need.</span>
-                                <span class="slider-label" data-value="4">4. </span>
-                                <span class="slider-label" data-value="3">3. Neutral </span>
-                                <span class="slider-label" data-value="2">2. </span>
-                                <span class="slider-label" data-value="1">1. This map lacks essential information and is not useful to me.</span>
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
         
                         </div>
                     </div>
                 </div>
-                <input type="text" id="info_Eindhoven" type="text" placeholder="Please explain your answer in a few words" ">
+                <input type="text" id="info_Eindhoven" type="text" placeholder="Please explain your answer in a few words">
             </div>
         </div>
             <br>
@@ -866,7 +1176,7 @@
             <div class="questioncontainer">
                 
                 <div class="mcquestion">
-                    <h3>4.	To what extent is the scale of the map appropriate for the purpose of the map? *</h3><br>
+                    <h3>62.	To what extent is the scale of the map appropriate for the purpose of the map? *</h3><br>
                     <input type="radio" name="scaleEindhoven" value="scale_effective"> The scale effectively covers the necessary area and level of detail<br>
                     <input type="radio" name="scaleEindhoven" value="too_zoomed_in"> It is too zoomed in, therefore the area covered is too small<br>
                     <input type="radio" name="scaleEindhoven" value="too_zoomed_out"> It is too zoomed out, therefore the level of detail is too low<br>
@@ -880,16 +1190,16 @@
             <h2>Legend</h2><br>
         
             <div class="questioncontainer">
-                <h3>5. To what extent does the legend impact the clarity of the map? *</h3>
+                <h3>63. How would you rate the completeness of information in the legend? *</h3>
                 <div class="slider-container">
                     <div class="slider-wrapper">
-                        <input type="range" min="1" max="5" value="3" class="slider" id="slider_legend_clarity_Eindhoven">
+                        <input type="range" min="1" max="5" value="3" class="slider" id="slider_legend_completeness_Eindhoven">
                         <div class="slider-labels">
-                            <span class="slider-label" data-value="5">5. The legend effectively clarifies all symbols and elements, improving overall clarity.</span>
-                            <span class="slider-label" data-value="4">4. </span>
-                            <span class="slider-label" data-value="3">3. Neutral </span>
-                            <span class="slider-label" data-value="2">2. </span>
-                            <span class="slider-label" data-value="1">1. The legend provides conflicting information about symbols and elements, reducing clarity</span>
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                         </div>
                     </div>
                 </div>
@@ -897,20 +1207,20 @@
             </div>
         
             <div class="questioncontainer">
-                <h3>6. To what extent does the legend contain all the information you need? *</h3>
+                <h3>64. How would you rate the clarity of the legend? *</h3>
                 <div class="slider-container">
                     <div class="slider-wrapper">
-                        <input type="range" min="1" max="5" value="3" class="slider" id="slider_legend_content_Eindhoven">
+                        <input type="range" min="1" max="5" value="3" class="slider" id="slider_legend_clarity_Eindhoven">
                         <div class="slider-labels">
-                            <span class="slider-label" data-value="5">5. The legend contains all the necessary information I need to understand the map.</span>
-                            <span class="slider-label" data-value="4">4. </span>
-                            <span class="slider-label" data-value="3">3. Neutral </span>
-                            <span class="slider-label" data-value="2">2. </span>
-                            <span class="slider-label" data-value="1">1. This legend lacks essential information and is not useful to me.</span>
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                         </div>
                     </div>
                 </div>
-                <input type="text" id="legend_content_Eindhoven" type="text" placeholder="Please explain your answer in a few words" ">
+                <input type="text" id="legend_content_Eindhoven" type="text" placeholder="Please explain your answer in a few words">
             </div> 
             </div> 
             <br>
@@ -920,38 +1230,38 @@
             <div class="container3">
             <h2>Text</h2><br>
             <div class="questioncontainer">
-                <h3>7. To what extent does the text impact clarity of the map? *</h3>
+                <h3>65. How would you rate the relevance of the text on the page?  *</h3>
                 <div class="slider-container">
                     <div class="slider-wrapper">
                         <input type="range" min="1" max="5" value="3" class="slider" id="slider_text_clarity_Eindhoven">
                         <div class="slider-labels">
-                            <span class="slider-label" data-value="5">5. The text significantly contributes to clarity of the map (e.g., explaining, adding information)</span>
-                            <span class="slider-label" data-value="4">4. </span>
-                            <span class="slider-label" data-value="3">3. </span>
-                            <span class="slider-label" data-value="2">2. </span>
-                            <span class="slider-label" data-value="1">1. The text significantly reduces clarity of the map (e.g., providing unclear or unnecesary information)</span>
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                         </div>
                     </div>
                 </div>
-                <input type="text" id="text_clarity_Eindhoven" type="text" placeholder="Please explain your answer in a few words" ">
+                <input type="text" id="text_clarity_Eindhoven" type="text" placeholder="Please explain your answer in a few words">
             </div>
         
         
             <div class="questioncontainer">
-                <h3>8. To what extent does the visualization (font, color, size) of the text impact its meaning? *</h3><br>
+                <h3>66. How would you rate the visualization of the text (size, font, color)? *</h3><br>
                 <div class="slider-container">
                     <div class="slider-wrapper">
                         <input type="range" min="1" max="5" value="3" class="slider" id="slider_text_visualization_Eindhoven">
                         <div class="slider-labels">
-                            <span class="slider-label" data-value="5">5. The color and size of the text effectively enhance its meaning</span>
-                            <span class="slider-label" data-value="4">4. </span>
-                            <span class="slider-label" data-value="3">3. Neutral</span>
-                            <span class="slider-label" data-value="2">2. </span>
-                            <span class="slider-label" data-value="1">1. The size and color conflict with the meaning of the text, making it difficult to interpret</span>
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                         </div>
                     </div>
                 </div>
-                <input type="text" id="text_visualization_Eindhoven" type="text" placeholder="Please explain your answer in a few words" ">
+                <input type="text" id="text_visualization_Eindhoven" type="text" placeholder="Please explain your answer in a few words">
             </div>
             </div>
             <br>
@@ -961,37 +1271,37 @@
             <div class="container3">
             <h2>Use of color</h2><br>
             <div class="questioncontainer">
-                <h3>9. To what extent does the use of color (e.g. for trees, roads, buildings) impact the clarity of the map? *</h3><br>
+                <h3>67. How would you rate the use of color (eg. trees, roads, buildings) in making the map visually appealing? *</h3><br>
                 <div class="slider-container">
                     <div class="slider-wrapper">
                         <input type="range" min="1" max="5" value="3" class="slider" id="slider_color_clarity_Eindhoven">
                         <div class="slider-labels">
-                            <span class="slider-label" data-value="5">5. The use of color significantly enhances the clarity</span>
-                            <span class="slider-label" data-value="4">4. </span>
-                            <span class="slider-label" data-value="3">3. Neutral</span>
-                            <span class="slider-label" data-value="2">2. </span>
-                            <span class="slider-label" data-value="1">1. The use of color significantly detracts from clarity</span>
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                         </div>
                     </div>
                 </div>
-                <input type="text" id="color_clarity_Eindhoven" type="text" placeholder="Please explain your answer in a few words" ">
+                <input type="text" id="color_clarity_Eindhoven" type="text" placeholder="Please explain your answer in a few words">
             </div>
         
             <div class="questioncontainer">
-                <h3>10. To what extent does the use of color (e.g. for trees, roads, buildings) impact the meaning of the map? *</h3><br>
+                <h3>68. How would you rate the use of color in being appropriate for the elements they represent (eg trees, roads, buildings)? *</h3><br>
                 <div class="slider-container">
                     <div class="slider-wrapper">
                         <input type="range" min="1" max="5" value="3" class="slider" id="slider_color_meaning_Eindhoven">
                         <div class="slider-labels">
-                            <span class="slider-label" data-value="5">5. The use of color significantly enhances the meaning of the elements in the map</span>
-                            <span class="slider-label" data-value="4">4. </span>
-                            <span class="slider-label" data-value="3">3. Neutral</span>
-                            <span class="slider-label" data-value="2">2. </span>
-                            <span class="slider-label" data-value="1">1. The use of color significantly conflicts with the meaning of the elements in the map</span>
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                         </div>
                     </div>
                 </div>
-                <input type="text" id="color_meaning_Eindhoven" type="text" placeholder="Please explain your answer in a few words" ">
+                <input type="text" id="color_meaning_Eindhoven" type="text" placeholder="Please explain your answer in a few words">
             </div>
             </div>
             <br>
@@ -1001,37 +1311,37 @@
             <div class="container3">
             <h2>Use of symbols</h2><br>
             <div class="questioncontainer">
-                <h3>11. To what extent does the choice of symbols impact their clarity? *</h3><br>
+                <h3>69. How would you rate the choice of symbols in being appropriate for the elements they represent (eg. buildings, facilities)? *</h3><br>
                 <div class="slider-container">
                     <div class="slider-wrapper">
                         <input type="range" min="1" max="5" value="3" class="slider" id="slider_symbols_clarity_Eindhoven">
                         <div class="slider-labels">
-                            <span class="slider-label" data-value="5">5. The symbols are very clear</span>
-                            <span class="slider-label" data-value="4">4. </span>
-                            <span class="slider-label" data-value="3">3. Neutral</span>
-                            <span class="slider-label" data-value="2">2. </span>
-                            <span class="slider-label" data-value="1">1. The symbols are confusing and not intuitive, making them difficult to understand</span>
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                         </div>
                     </div>
                 </div>
-                <input type="text" id="symbols_clarity_Eindhoven" type="text" placeholder="Please explain your answer in a few words" ">
+                <input type="text" id="symbols_clarity_Eindhoven" type="text" placeholder="Please explain your answer in a few words">
             </div>
         
             <div class="questioncontainer">
-                <h3>12. To what extent does the use of symbols impact the meaning of the map? *</h3><br>
+                <h3>70. How would you rate the impact of the symbols on the clarity of the map? *</h3><br>
                 <div class="slider-container">
                     <div class="slider-wrapper">
                         <input type="range" min="1" max="5" value="3" class="slider" id="slider_symbols_meaning_Eindhoven">
                         <div class="slider-labels">
-                            <span class="slider-label" data-value="5">5. The use of symbols effectively enhances the meaning of the map</span>
-                            <span class="slider-label" data-value="4">4. </span>
-                            <span class="slider-label" data-value="3">3. Neutral</span>
-                            <span class="slider-label" data-value="2">2. </span>
-                            <span class="slider-label" data-value="1">1. The symbols are confusing, making it difficult to interpret the meaning of the map</span>
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                         </div>
                     </div>
                 </div>
-                <input type="text" id="slider_symbols_meaning_Eindhoven" type="text" placeholder="Please explain your answer in a few words" ">
+                <input type="text" id="slider_symbols_meaning_Eindhoven" type="text" placeholder="Please explain your answer in a few words">
             </div>
             </div>
         
@@ -1054,7 +1364,8 @@
 
                 <div class="container4">
                 <h2>Erasmus Univeristy Rotterdam</h2>
-                <p>Rate the map of Erasmus University Rotterdam on its content and presentation</p>
+                <p>Rate the map of Erasmus University Rotterdam on its content and presentation, keeping in mind the purpose a campus map has to you. 
+                <br><br>You can view the map at any moment by clicking the button in the top right corner.</p>
             <!-- Map image Rotterdam   -->
             <img src="Rotterdam_plattegrond.png" alt="Rotterdammap"  height="auto" class="enlarge">
             <p2>Click on the image to zoom in/out</p2>
@@ -1068,56 +1379,55 @@
                 <div class="container3">
                 <h2>Content and organization</h2><br>
                 <div class="questioncontainer">
-                    <h3>1. In what way does the layout of the page influence how you navigate the map and find what you are interested in? *</h3><br>
+                    <h3>71. How would you rate the layout of the page? *</h3><br>
                     <div class="slider-container">
                         <div class="slider-wrapper">
                             <input type="range" min="1" max="5" value="3" class="slider" id="slider_layout_Rotterdam">
                             <div class="slider-labels">
-                                <span class="slider-label" data-value="5">5. The page layout is clear and guides me effectively to find the information I need.</span>
-                                <span class="slider-label" data-value="4">4.</span>
-                                <span class="slider-label" data-value="3">3. Neutral </span>
-                                <span class="slider-label" data-value="2">2. </span>
-                                <span class="slider-label" data-value="1">1. </span>
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                             </div>
                             
                         </div>
                     </div>
-                    <input type="text" id="layout_Rotterdam" type="text" placeholder="Please explain your answer in a few words" ">
+                    <input type="text" id="layout_Rotterdam" type="text" placeholder="Please explain your answer in a few words">
                 </div>
             
                 <div class="questioncontainer">
-                    <h3>2. To what extent does the choice to display the map in 3D impact the clarity of the map? *</h3><br>
+                    <h3>72. How would you rate the choice to display the map in 3D, with regards to the clarity of the map?  *</h3><br>
                     <div class="slider-container">
                         <div class="slider-wrapper">
                             <input type="range" min="1" max="5" value="3" class="slider" id="slider_3D_clarity_Rotterdam">
                             <div class="slider-labels">
-                                <span class="slider-label" data-value="5">5. The choice of 3D significantly improves clarity</span>
-                                <span class="slider-label" data-value="4">4. </span>
-                                <span class="slider-label" data-value="3">3. Neutral </span>
-                                <span class="slider-label" data-value="2">2. </span>
-                                <span class="slider-label" data-value="1">1. The choice of 3D significantly hinders clarity</span>
+                                <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                             </div>
                         </div>
                     </div>
-                    <input type="text" id="threeD_clarity_Rotterdam" type="text" placeholder="Please explain" ">
+                    <input type="text" id="threeD_clarity_Rotterdam" type="text" placeholder="Please explain your answer in a few words">
                 </div>
             
                 <div class="questioncontainer">
-                    <h3>3. If this was your campus, would this map contain the information you usually look for? *</h3><br>
+                    <h3>73. If this was your campus, how would you rate the completeness of information of this map? *</h3><br>
                     <div class="slider-container">
                         <div class="slider-wrapper">
-                            <input type="range" min="0" max="5" value="3" class="slider" id="slider_info_Rotterdam">
+                            <input type="range" min="1" max="5" value="3" class="slider" id="slider_info_Rotterdam">
                             <div class="slider-labels">
-                                <span class="slider-label" data-value="5">5. Yes, this map provides all the essential information I need.</span>
-                                    <span class="slider-label" data-value="4">4. </span>
-                                    <span class="slider-label" data-value="3">3. Neutral </span>
-                                    <span class="slider-label" data-value="2">2. </span>
-                                    <span class="slider-label" data-value="1">1. This map lacks essential information and is not useful to me.</span>
-            
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                             </div>
                         </div>
                     </div>
-                    <input type="text" id="info_Rotterdam" type="text" placeholder="Please explain your answer in a few words" ">
+                    <input type="text" id="info_Rotterdam" type="text" placeholder="Please explain your answer in a few words">
                 </div>
             </div>
                 <br>
@@ -1127,9 +1437,9 @@
             <div class="container3">
             <h2>Level of detail</h2><br>
                 <div class="questioncontainer">
-                    
+        
                     <div class="mcquestion">
-                        <h3>4.	To what extent is the scale of the map appropriate for the purpose of the map? *</h3>
+                        <h3>74.	To what extent is the scale of the map appropriate for the purpose of the map? *</h3>
                         <input type="radio" name="scaleRotterdam" value="scale_effective"> The scale effectively covers the necessary area and level of detail<br>
                         <input type="radio" name="scaleRotterdam" value="too_zoomed_in"> It is too zoomed in, therefore the area covered is too small<br>
                         <input type="radio" name="scaleRotterdam" value="too_zoomed_out"> It is too zoomed out, therefore the level of detail is too low<br>
@@ -1143,16 +1453,16 @@
                 <h2>Legend</h2><br>
             
                 <div class="questioncontainer">
-                    <h3>5. To what extent does the legend impact the clarity of the map? *</h3><br>
+                    <h3>75. How would you rate the completeness of information in the legend? *</h3><br>
                     <div class="slider-container">
                         <div class="slider-wrapper">
-                            <input type="range" min="1" max="5" value="3" class="slider" id="slider_legend_clarity_Rotterdam">
+                            <input type="range" min="1" max="5" value="3" class="slider" id="slider_legend_completeness_Rotterdam">
                             <div class="slider-labels">
-                                <span class="slider-label" data-value="5">5. The legend effectively clarifies all symbols and elements, improving overall clarity.</span>
-                                <span class="slider-label" data-value="4">4. </span>
-                                <span class="slider-label" data-value="3">3. Neutral </span>
-                                <span class="slider-label" data-value="2">2. </span>
-                                <span class="slider-label" data-value="1">1. The legend provides conflicting information about symbols and elements, reducing clarity</span>
+                                <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                             </div>
                         </div>
                     </div>
@@ -1160,20 +1470,20 @@
                 </div>
             
                 <div class="questioncontainer">
-                    <h3>6. To what extent does the legend contain all the information you need? *</h3>
+                    <h3>76. How would you rate the clarity of the legend? *</h3>
                     <div class="slider-container">
                         <div class="slider-wrapper">
-                            <input type="range" min="1" max="5" value="3" class="slider" id="slider_legend_content_Rotterdam">
+                            <input type="range" min="1" max="5" value="3" class="slider" id="slider_legend_clarity_Rotterdam">
                             <div class="slider-labels">
-                                <span class="slider-label" data-value="5">5. The legend contains all the necessary information I need to understand the map.</span>
-                                <span class="slider-label" data-value="4">4. </span>
-                                <span class="slider-label" data-value="3">3. Neutral </span>
-                                <span class="slider-label" data-value="2">2. </span>
-                                <span class="slider-label" data-value="1">1. This legend lacks essential information and is not useful to me.</span>
+                                <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                             </div>
                         </div>
                     </div>
-                    <input type="text" id="legend_content_Rotterdam" type="text" placeholder="Please explain your answer in a few words" ">
+                    <input type="text" id="legend_content_Rotterdam" type="text" placeholder="Please explain your answer in a few words">
                 </div> 
                 </div> 
                 <br>
@@ -1183,38 +1493,38 @@
                 <div class="container3">
                 <h2>Text</h2><br>
                 <div class="questioncontainer">
-                    <h3>7. To what extent does the text impact clarity of the map? *</h3><br>
+                    <h3>77. How would you rate the relevance of the text on the page?  *</h3><br>
                     <div class="slider-container">
                         <div class="slider-wrapper">
                             <input type="range" min="1" max="5" value="3" class="slider" id="slider_text_clarity_Rotterdam">
                             <div class="slider-labels">
-                                <span class="slider-label" data-value="5">5. The text significantly contributes to clarity of the map (e.g., explaining, adding information)</span>
-                                <span class="slider-label" data-value="4">4. </span>
-                                <span class="slider-label" data-value="3">3. Neutral</span>
-                                <span class="slider-label" data-value="2">2. </span>
-                                <span class="slider-label" data-value="1">1. The text significantly reduces clarity of the map (e.g., providing unclear or unnecesary information)</span>
+                            <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                             </div>
                         </div>
                     </div>
-                    <input type="text" id="text_clarity_Rotterdam" type="text" placeholder="Please explain your answer in a few words" ">
+                    <input type="text" id="text_clarity_Rotterdam" type="text" placeholder="Please explain your answer in a few words">
                 </div>
             
             
                 <div class="questioncontainer">
-                    <h3>8. To what extent does the visualization (font, color, size) of the text impact its meaning? *</h3><br>
+                    <h3>78. How would you rate the visualization of the text (size, font, color)? *</h3><br>
                     <div class="slider-container">
                         <div class="slider-wrapper">
                             <input type="range" min="1" max="5" value="3" class="slider" id="slider_text_visualization_Rotterdam">
                             <div class="slider-labels">
-                                <span class="slider-label" data-value="5">5. The color and size of the text effectively enhance its meaning</span>
-                                <span class="slider-label" data-value="4">4. </span>
-                                <span class="slider-label" data-value="3">3. Neutral</span>
-                                <span class="slider-label" data-value="2">2. </span>
-                                <span class="slider-label" data-value="1">1. </span>
+                                <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                             </div>
                         </div>
                     </div>
-                    <input type="text" id="text_visualization_Rotterdam" type="text" placeholder="Please explain your answer in a few words" ">
+                    <input type="text" id="text_visualization_Rotterdam" type="text" placeholder="Please explain your answer in a few words">
                 </div>
                 </div>
                 <br>
@@ -1224,37 +1534,37 @@
                 <div class="container3">
                 <h2>Use of color</h2><br>
                 <div class="questioncontainer">
-                    <h3>9. To what extent does the use of color (e.g. for trees, roads, buildings) impact the clarity of the map? *</h3><br>
+                    <h3>79. How would you rate the use of color (eg. trees, roads, buildings) in making the map visually appealing? *</h3><br>
                     <div class="slider-container">
                         <div class="slider-wrapper">
                             <input type="range" min="1" max="5" value="3" class="slider" id="slider_color_clarity_Rotterdam">
                             <div class="slider-labels">
-                                <span class="slider-label" data-value="5">5. The use of color significantly enhances the clarity</span>
-                                <span class="slider-label" data-value="4">4. </span>
-                                <span class="slider-label" data-value="3">3. </span>
-                                <span class="slider-label" data-value="2">2. </span>
-                                <span class="slider-label" data-value="1">1. The use of color significantly detracts from clarity</span>
+                                <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                             </div>
                         </div>
                     </div>
-                    <input type="text" id="color_clarity_Rotterdam" type="text" placeholder="Please explain your answer in a few words" ">
+                    <input type="text" id="color_clarity_Rotterdam" type="text" placeholder="Please explain your answer in a few words">
                 </div>
             
                 <div class="questioncontainer">
-                    <h3>10. To what extent does the use of color (e.g. for trees, roads, buildings) impact the meaning of the map? *</h3><br>
+                    <h3>80. How would you rate the use of color in being appropriate for the elements they represent (eg trees, roads, buildings)? *</h3><br>
                     <div class="slider-container">
                         <div class="slider-wrapper">
                             <input type="range" min="1" max="5" value="3" class="slider" id="slider_color_meaning_Rotterdam">
                             <div class="slider-labels">
-                                <span class="slider-label" data-value="5">5. The use of color significantly enhances the meaning of the elements in the map</span>
-                                <span class="slider-label" data-value="4">4. </span>
-                                <span class="slider-label" data-value="3">3. Neutral</span>
-                                <span class="slider-label" data-value="2">2. </span>
-                                <span class="slider-label" data-value="1">1. The use of color significantly conflicts with the meaning of the elements in the map</span>
+                                <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                             </div>
                         </div>
                     </div>
-                    <input type="text" id="color_meaning_Rotterdam" type="text" placeholder="Please explain your answer in a few words" ">
+                    <input type="text" id="color_meaning_Rotterdam" type="text" placeholder="Please explain your answer in a few words">
                 </div>
                 </div>
                 <br>
@@ -1264,327 +1574,58 @@
                 <div class="container3">
                 <h2>Use of symbols</h2><br>
                 <div class="questioncontainer">
-                    <h3>11. To what extent does the choice of symbols impact their clarity? *</h3><br>
+                    <h3>81. How would you rate the choice of symbols in being appropriate for the elements they represent (eg. buildings, facilities)? *</h3><br>
                     <div class="slider-container">
                         <div class="slider-wrapper">
                             <input type="range" min="1" max="5" value="3" class="slider" id="slider_symbols_clarity_Rotterdam">
                             <div class="slider-labels">
-                                <span class="slider-label" data-value="5">5. The symbols are very clear</span>
-                                <span class="slider-label" data-value="4">4. </span>
-                                <span class="slider-label" data-value="3">3. Neutral</span>
-                                <span class="slider-label" data-value="2">2. </span>
-                                <span class="slider-label" data-value="1">1. The symbols are confusing and not intuitive, making them difficult to understand</span>
+                                <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                             </div>
                         </div>
                     </div>
-                    <input type="text" id="symbols_clarity_Rotterdam" type="text" placeholder="Please explain your answer in a few words" ">
+                    <input type="text" id="symbols_clarity_Rotterdam" type="text" placeholder="Please explain your answer in a few words">
                 </div>
             
                 <div class="questioncontainer">
-                    <h3>12. To what extent does the use of symbols impact the meaning of the map? *</h3><br>
+                    <h3>82. How would you rate the impact of the symbols on the clarity of the map? *</h3><br>
                     <div class="slider-container">
                         <div class="slider-wrapper">
                             <input type="range" min="1" max="5" value="3" class="slider" id="slider_symbols_meaning_Rotterdam">
                             <div class="slider-labels">
-                                <span class="slider-label" data-value="5">5. The use of symbols effectively enhances the meaning of the map</span>
-                                <span class="slider-label" data-value="4">4. </span>
-                                <span class="slider-label" data-value="3">3. </span>
-                                <span class="slider-label" data-value="2">2. </span>
-                                <span class="slider-label" data-value="1">1. The symbols are confusing, making it difficult to interpret the meaning of the map</span>
+                               <span class="slider-label" data-value="5">5. Excellent </span>
+                            <span class="slider-label" data-value="4">4. Very good</span>
+                            <span class="slider-label" data-value="3">3. Fair </span>
+                            <span class="slider-label" data-value="2">2. Poor</span>
+                            <span class="slider-label" data-value="1">1. Very poor</span>
                             </div>
                         </div>
                     </div>
-                    <input type="text" id="slider_symbols_meaning_Rotterdam" type="text" placeholder="Please explain your answer in a few words" ">
+                    <input type="text" id="slider_symbols_meaning_Rotterdam" type="text" placeholder="Please explain your answer in a few words">
                 </div>
                 </div>
             
                 <button onclick="showPage('EindhovenPage')">Previous</button>
-                <button id="RotterdamButton" onclick="showPage('DelftPage')">Next</button>
+                <button id="RotterdamButton" onclick="showPage('ComparePage')">Next</button>
                 
                 </div>
 
-                <div id="DelftPage" class="page" style="display:none">
-                    <div class="sidebar">
-                        <p> click here to view the map</p>
-                        <img src="Delft_plattegrond.png" alt="Delftmap" class="small-image" data-target="delft-enlarged">
-                    </div>
-
-                    <div class="enlarged-image-container2" id="delft-enlarged">
-                        <img src="Delft_plattegrond.png" alt="Delftmap" class="enlarged-image">
-        <p2>Click on the image to hide</p2>
-                    </div>  
-
-                    <div class="container4">
-                    <h2>Delft Univeristy of Technology</h2>
-                    <p>Rate the map of Delft University of Technology on its content and presentation</p>
-                <!-- Map image Delft   -->
-                <img src="Delft_plattegrond.png" alt="Delftmap"  height="auto" class="enlarge">
-                <p2>Click on the image to zoom in/out</p2>
                 
-                    </div>
-                    
-                    
-                    <br>
-                
-                <!-- Content and org  -->
-                    <div class="container3">
-                    <h2>Content and organization</h2><br>
-                    <div class="questioncontainer">
-                        <h3>1. In what way does the layout of the page influence how you navigate the map and find what you are interested in? *</h3><br>
-                        <div class="slider-container">
-                            <div class="slider-wrapper">
-                                <input type="range" min="1" max="5" value="3" class="slider" id="slider_layout_Delft">
-                                <div class="slider-labels">
-                                    <span class="slider-label" data-value="5">5. The page layout is clear and guides me effectively to find the information I need.</span>
-                                    <span class="slider-label" data-value="4">4.</span>
-                                    <span class="slider-label" data-value="3">3. Neutral </span>
-                                    <span class="slider-label" data-value="2">2. </span>
-                                    <span class="slider-label" data-value="1">1. </span>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <input type="text" id="layout_Delft" type="text" placeholder="Please explain your answer in a few words" ">
-                    </div>
-                
-                    <div class="questioncontainer">
-                        <h3>2. To what extent does the choice to display the map in 2D impact the clarity of the map? *</h3><br>
-                        <div class="slider-container">
-                            <div class="slider-wrapper">
-                                <input type="range" min="1" max="5" value="3" class="slider" id="slider_3D_clarity_Delft">
-                                <div class="slider-labels">
-                                    <span class="slider-label" data-value="5">5. The choice of 2D significantly improves clarity</span>
-                                    <span class="slider-label" data-value="4">4. </span>
-                                    <span class="slider-label" data-value="3">3. Neutral </span>
-                                    <span class="slider-label" data-value="2">2. </span>
-                                    <span class="slider-label" data-value="1">1. The choice of 2D significantly hinders clarity</span>
-                                </div>
-                            </div>
-                        </div>
-                        <input type="text" id="threeD_clarity_Delft" type="text" placeholder="Please explain" ">
-                    </div>
-                
-                    <div class="questioncontainer">
-                        <h3>3. If this was your campus, would this map contain the information you usually look for? *</h3><br>
-                        <div class="slider-container">
-                            <div class="slider-wrapper">
-                                <input type="range" min="0" max="5" value="3" class="slider" id="slider_info_Delft">
-                                <div class="slider-labels">
-                                    <span class="slider-label" data-value="5">5. Yes, this map provides all the essential information I need.</span>
-                                        <span class="slider-label" data-value="4">4. </span>
-                                        <span class="slider-label" data-value="3">3. Neutral </span>
-                                        <span class="slider-label" data-value="2">2. </span>
-                                        <span class="slider-label" data-value="1">1. </span>
-                
-                                </div>
-                            </div>
-                        </div>
-                        <input type="text" id="info_Delft" type="text" placeholder="Please explain your answer in a few words" ">
-                    </div>
-                </div>
-                    <br>
-                
-                <!-- LoD -->
-                
-                <div class="container3">
-                <h2>Level of detail</h2><br>
-                    <div class="questioncontainer">
-                        
-                        <div class="mcquestion">
-                            <h3>4.	To what extent is the scale of the map appropriate for the purpose of the map? *</h3>
-                            <input type="radio" name="scaleDelft" value="scale_effective"> The scale effectively covers the necessary area and level of detail<br>
-                            <input type="radio" name="scaleDelft" value="too_zoomed_in"> It is too zoomed in, therefore the area covered is too small<br>
-                            <input type="radio" name="scaleDelft" value="too_zoomed_out"> It is too zoomed out, therefore the level of detail is too low<br>
-                        </div>
-                    </div>
-                </div>
-                    <br>
-                
-                <!-- Legend  -->
-                    <div class="container3">
-                    <h2>Legend</h2><br>
-                
-                    <div class="questioncontainer">
-                        <h3>5. To what extent does the legend impact the clarity of the map? *</h3><br>
-                        <div class="slider-container">
-                            <div class="slider-wrapper">
-                                <input type="range" min="1" max="5" value="3" class="slider" id="slider_legend_clarity_Delft">
-                                <div class="slider-labels">
-                                    <span class="slider-label" data-value="5">5. The legend effectively clarifies all symbols and elements, improving overall clarity.</span>
-                                    <span class="slider-label" data-value="4">4. </span>
-                                    <span class="slider-label" data-value="3">3. </span>
-                                    <span class="slider-label" data-value="2">2. </span>
-                                    <span class="slider-label" data-value="1">1. The legend provides conflicting information about symbols and elements, reducing clarity</span>
-                                </div>
-                            </div>
-                        </div>
-                        <input type="text" id="legend_clarity_Delft" type="text" placeholder="Please explain your answer in a few words   " ">
-                    </div>
-                
-                    <div class="questioncontainer">
-                        <h3>6. To what extent does the legend contain all the information you need? *</h3>
-                        <div class="slider-container">
-                            <div class="slider-wrapper">
-                                <input type="range" min="1" max="5" value="3" class="slider" id="slider_legend_content_Delft">
-                                <div class="slider-labels">
-                                    <span class="slider-label" data-value="5">5. The legend contains all the necessary information I need to understand the map.</span>
-                                    <span class="slider-label" data-value="4">4. </span>
-                                    <span class="slider-label" data-value="3">3. Neutral </span>
-                                    <span class="slider-label" data-value="2">2. </span>
-                                    <span class="slider-label" data-value="1">1. This legend lacks essential information and is not useful to me.</span>
-                                </div>
-                            </div>
-                        </div>
-                        <input type="text" id="legend_content_Delft" type="text" placeholder="Please explain your answer in a few words" ">
-                    </div> 
-                    </div> 
-                    <br>
-                
-                
-                <!-- Text -->
-                    <div class="container3">
-                    <h2>Text</h2><br>
-                    <div class="questioncontainer">
-                        <h3>7. To what extent does the text impact clarity of the map? *</h3><br>
-                        <div class="slider-container">
-                            <div class="slider-wrapper">
-                                <input type="range" min="1" max="5" value="3" class="slider" id="slider_text_clarity_Delft">
-                                <div class="slider-labels">
-                                    <span class="slider-label" data-value="5">5. The text significantly contributes to clarity of the map (e.g., explaining, adding information)</span>
-                                    <span class="slider-label" data-value="4">4. </span>
-                                    <span class="slider-label" data-value="3">3. Neutral</span>
-                                    <span class="slider-label" data-value="2">2. </span>
-                                    <span class="slider-label" data-value="1">1. The text significantly reduces clarity of the map (e.g., providing unclear or unnecesary information)</span>
-                                </div>
-                            </div>
-                        </div>
-                        <input type="text" id="text_clarity_Delft" type="text" placeholder="Please explain your answer in a few words" ">
-                    </div>
-                
-                
-                    <div class="questioncontainer">
-                        <h3>8. To what extent does the visualization (font, color, size) of the text impact its meaning? *</h3><br>
-                        <div class="slider-container">
-                            <div class="slider-wrapper">
-                                <input type="range" min="1" max="5" value="3" class="slider" id="slider_text_visualization_Delft">
-                                <div class="slider-labels">
-                                    <span class="slider-label" data-value="5">5. The color and size of the text effectively enhance its meaning</span>
-                                    <span class="slider-label" data-value="4">4. </span>
-                                    <span class="slider-label" data-value="3">3. Neutral</span>
-                                    <span class="slider-label" data-value="2">2. </span>
-                                    <span class="slider-label" data-value="1">1. The size and color conflict with the meaning of the text, making it difficult to interpret</span>
-                                </div>
-                            </div>
-                        </div>
-                        <input type="text" id="text_visualization_Delft" type="text" placeholder="Please explain your answer in a few words" ">
-                    </div>
-                    </div>
-                    <br>
-                
-                <!-- Use of color              -->
-                
-                    <div class="container3">
-                    <h2>Use of color</h2><br>
-                    <div class="questioncontainer">
-                        <h3>9. To what extent does the use of color (e.g. for trees, roads, buildings) impact the clarity of the map? *</h3><br>
-                        <div class="slider-container">
-                            <div class="slider-wrapper">
-                                <input type="range" min="1" max="5" value="3" class="slider" id="slider_color_clarity_Delft">
-                                <div class="slider-labels">
-                                    <span class="slider-label" data-value="5">5. The use of color significantly enhances the clarity</span>
-                                    <span class="slider-label" data-value="4">4. </span>
-                                    <span class="slider-label" data-value="3">3. Neutral</span>
-                                    <span class="slider-label" data-value="2">2. </span>
-                                    <span class="slider-label" data-value="1">1. The use of color significantly detracts from clarity</span>
-                                </div>
-                            </div>
-                        </div>
-                        <input type="text" id="color_clarity_Delft" type="text" placeholder="Please explain your answer in a few words" ">
-                    </div>
-                
-                    <div class="questioncontainer">
-                        <h3>10. To what extent does the use of color (e.g. for trees, roads, buildings) impact the meaning of the map? *</h3><br>
-                        <div class="slider-container">
-                            <div class="slider-wrapper">
-                                <input type="range" min="1" max="5" value="3" class="slider" id="slider_color_meaning_Delft">
-                                <div class="slider-labels">
-                                    <span class="slider-label" data-value="5">5. The use of color significantly enhances the meaning of the elements in the map</span>
-                                    <span class="slider-label" data-value="4">4. </span>
-                                    <span class="slider-label" data-value="3">3. Neutral</span>
-                                    <span class="slider-label" data-value="2">2. </span>
-                                    <span class="slider-label" data-value="1">1. The use of color significantly conflicts with the meaning of the elements in the map</span>
-                                </div>
-                            </div>
-                        </div>
-                        <input type="text" id="color_meaning_Delft" type="text" placeholder="Please explain your answer in a few words" ">
-                    </div>
-                    </div>
-                    <br>
-                
-                <!-- Use of symbols  -->
-                
-                    <div class="container3">
-                    <h2>Use of symbols</h2><br>
-                    <div class="questioncontainer">
-                        <h3>11. To what extent does the choice of symbols impact their clarity? *</h3><br>
-                        <div class="slider-container">
-                            <div class="slider-wrapper">
-                                <input type="range" min="1" max="5" value="3" class="slider" id="slider_symbols_clarity_Delft">
-                                <div class="slider-labels">
-                                    <span class="slider-label" data-value="5">5. The symbols are very clear</span>
-                                    <span class="slider-label" data-value="4">4. </span>
-                                    <span class="slider-label" data-value="3">3. </span>
-                                    <span class="slider-label" data-value="2">2. </span>
-                                    <span class="slider-label" data-value="1">1. The symbols are confusing and not intuitive, making them difficult to understand</span>
-                                </div>
-                            </div>
-                        </div>
-                        <input type="text" id="symbols_clarity_Delft" type="text" placeholder="Please explain your answer in a few words" ">
-                    </div>
-                
-                    <div class="questioncontainer">
-                        <h3>12. To what extent does the use of symbols impact the meaning of the map? *</h3><br>
-                        <div class="slider-container">
-                            <div class="slider-wrapper">
-                                <input type="range" min="1" max="5" value="3" class="slider" id="slider_symbols_meaning_Delft">
-                                <div class="slider-labels">
-                                    <span class="slider-label" data-value="5">5. The use of symbols effectively enhances the meaning of the map</span>
-                                    <span class="slider-label" data-value="4">4. </span>
-                                    <span class="slider-label" data-value="3">3. Neutral</span>
-                                    <span class="slider-label" data-value="2">2. </span>
-                                    <span class="slider-label" data-value="1">1. The symbols are confusing, making it difficult to interpret the meaning of the map</span>
-                                </div>
-                            </div>
-                        </div>
-                        <input type="text" id="slider_symbols_meaning_Delft" type="text" placeholder="Please explain your answer in a few words" ">
-                    </div>
-                    </div>
-                
-                    <button onclick="showPage('RotterdamPage')">Previous</button>
-                    <button id="DelftButton" onclick="showPage('ComparePage')">Next</button>
-                    
-                    </div>
 
                     <div id="ComparePage" class="page" style="display:none">
 
 
                       
-                        <h2>Part D: Purpose of a campus map and comparing</h2>
+                        <h2>Part E: Comparing the maps</h2>
                         <p>* Required</p>
-                        <div class="questioncontainer">
-                            <h3>1.	For which purpose would you use a campus map primarily? *</h3><br>
-                            <div class="mcquestion">
-                                <input  id="purposePlaces" type="radio" name="purpose" value="places"> Finding places (faculties, facilities, rooms, etc.)<br>
-                                <input  id="purposeNavigation" type="radio" name="purpose" value="navigation"> Navigating on campus (To find the best/asted route from A to B)<br>
-                                <input  id="purposeDiscovering" type="radio" name="purpose" value="discovering"> Learning new things about the campus or places<br>
-                                <input  id="otherPurpose" type="radio" name="purpose" value="purposeOther"> Other
-                                <input  name="purposeOther" id="purposeOtherInput" placeholder="Please specify"> <br>
-                            </div> 
-                            </div><br>
+                     
 
                             <div class="questioncontainer">
                         <h2>Compare the maps</h2>
-            <p>Please rank the campus maps from best (top) to worst (bottom), for how well the maps serves this purpose *</p>
+            <p>83. Please rank the campus maps from best (top) to worst (bottom), for how well the maps serves this purpose *</p>
             <br>
             <ul id="sortable">
                 <li class="ui-state-default" id="Wagranking">
@@ -1623,15 +1664,18 @@
             <br>
         
 
-            <button onclick="showPage('DelftPage')">Previous</button>
+            <button onclick="showPage('RotterdamPage')">Previous</button>
             <button id="compareButton" onclick="showPage('submitPage')">Next</button>
 
         </div>
 
             <div id="submitPage" class="page" style="display:none">
                 <h2>Thank you for participating in this survey!</h2>
-                <p>Your responses are greatly appreciated and will be used data-value research purposes only. <br>
-                    If you would like to stay up to date with the results, or want to participate in further steps of this research, or for any questions please contact me at josephine.spit@hotmail.com 
+                <p>Your responses are greatly appreciated and will be used for research purposes only. <br>
+                    If you would like to stay up to date with the results, or have time to participate in a follow-up interview, please leave your email address below.  <br>
+                    <input type="text" id="emailInput" type="text" placeholder="Email address"> <br>
+
+                    <br>For any questions please contact me at j.l.spit@student.tudelft.nl
                 </p>
     
                 <button onclick="showPage('ComparePage')">Previous</button>
