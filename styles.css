@@ -751,7 +751,7 @@ img {
                         }
 
                         .sidebar {
-                           top:0;
+                           bottom:0;
                             right:0;
                             height: 8vh;
                             width: 15vw;
