@@ -753,8 +753,11 @@ img {
                         .sidebar {
                            top:0;
                             right:0;
-                            height: 10vh;
-                            width: 20vw;
+                            height: 8vh;
+                            width: 15vw;
+                            background-color: #9ab6c9; 
+                                opacity: 0.7;
+                        
                         }
 
                         .sidebar p {
