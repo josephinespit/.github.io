@@ -661,6 +661,10 @@ document.addEventListener('DOMContentLoaded', function() {
 function collectResponses() {
     let responses = {};
 
+        //collect email address on the intro page
+const emailInput = document.getElementById('emailInput');
+if (emailInput) responses.email = emailInput.value;
+
     // Section A responses
     const ageInput = document.getElementById('ageInput');
     if (ageInput) responses.age = ageInput.value;
@@ -758,6 +762,82 @@ function collectResponses() {
     // collect resonses mapUsePage
     const purpose = document.querySelector('input[name="purpose"]:checked');
     if (purpose) responses.purpose = purpose.value;
+
+
+        // section C responses: Delft
+const slider_familiarity_Delft = document.getElementById('slider_familiarity_Delft');
+if (slider_familiarity_Delft) responses.slider_familiarity_Delft = slider_familiarity_Delft.value;
+
+const slider_layout_Delft = document.getElementById('slider_layout_Delft');
+if (slider_layout_Delft) responses.slider_layout_Delft = slider_layout_Delft.value;
+
+// collect text from id layout_Delft
+const layout_Delft = document.getElementById('layout_Delft');
+if (layout_Delft) responses.layout_Delft = layout_Delft.value;
+
+const slider_3D_clarity_Delft = document.getElementById('slider_3D_clarity_Delft');
+if (slider_3D_clarity_Delft) responses.slider_3D_clarity_Delft = slider_3D_clarity_Delft.value;
+
+const threeD_clarity_Delft = document.getElementById('threeD_clarity_Delft');
+if (threeD_clarity_Delft) responses.threeD_clarity_Delft = threeD_clarity_Delft.value;
+
+const slider_info_Delft = document.getElementById('slider_info_Delft');
+if (slider_info_Delft) responses.slider_info_Delft = slider_info_Delft.value;
+
+const info_Delft = document.getElementById('info_Delft');
+if (info_Delft) responses.info_Delft = info_Delft.value;
+
+// check multiple choice question id scaleDelft
+const scaleDelft = document.querySelector('input[name="scaleDelft"]:checked');
+if (scaleDelft) responses.scaleDelft = scaleDelft.value;
+
+const slider_legend_completeness_Delft = document.getElementById('slider_legend_completeness_Delft');
+if (slider_legend_completeness_Delft) responses.slider_legend_completeness_Delft = slider_legend_completeness_Delft.value;
+
+const legend_clarity_Delft = document.getElementById('legend_clarity_Delft');
+if (legend_clarity_Delft) responses.legend_clarity_Delft = legend_clarity_Delft.value;
+
+const slider_legend_clarity_Delft = document.getElementById('slider_legend_clarity_Delft');
+if (slider_legend_clarity_Delft) responses.slider_legend_clarity_Delft = slider_legend_clarity_Delft.value;
+
+const legend_content_Delft = document.getElementById('legend_content_Delft');
+if (legend_content_Delft) responses.legend_content_Delft = legend_content_Delft.value;
+
+const slider_text_clarity_Delft = document.getElementById('slider_text_clarity_Delft');
+if (slider_text_clarity_Delft) responses.slider_text_clarity_Delft = slider_text_clarity_Delft.value;
+
+const text_clarity_Delft = document.getElementById('text_clarity_Delft');
+if (text_clarity_Delft) responses.text_clarity_Delft = text_clarity_Delft.value;
+
+const slider_text_visualization_Delft = document.getElementById('slider_text_visualization_Delft');
+if (slider_text_visualization_Delft) responses.slider_text_visualization_Delft = slider_text_visualization_Delft.value;
+
+const text_visualization_Delft = document.getElementById('text_visualization_Delft');
+if (text_visualization_Delft) responses.text_visualization_Delft = text_visualization_Delft.value;
+
+const slider_color_clarity_Delft = document.getElementById('slider_color_clarity_Delft');
+if (slider_color_clarity_Delft) responses.slider_color_clarity_Delft = slider_color_clarity_Delft.value;
+
+const color_clarity_Delft = document.getElementById('color_clarity_Delft');
+if (color_clarity_Delft) responses.color_clarity_Delft = color_clarity_Delft.value;
+
+const slider_color_meaning_Delft = document.getElementById('slider_color_meaning_Delft');
+if (slider_color_meaning_Delft) responses.slider_color_meaning_Delft = slider_color_meaning_Delft.value;
+
+const color_meaning_Delft = document.getElementById('color_meaning_Delft');
+if (color_meaning_Delft) responses.color_meaning_Delft = color_meaning_Delft.value;
+
+const slider_symbols_clarity_Delft = document.getElementById('slider_symbols_clarity_Delft');
+if (slider_symbols_clarity_Delft) responses.slider_symbols_clarity_Delft = slider_symbols_clarity_Delft.value;
+
+const symbols_clarity_Delft = document.getElementById('symbols_clarity_Delft');
+if (symbols_clarity_Delft) responses.symbols_clarity_Delft = symbols_clarity_Delft.value;
+
+const slider_symbols_meaning_Delft = document.getElementById('slider_symbols_meaning_Delft');
+if (slider_symbols_meaning_Delft) responses.slider_symbols_meaning_Delft = slider_symbols_meaning_Delft.value;
+
+const symbols_meaning_Delft = document.getElementById('symbols_meaning_Delft');
+if (symbols_meaning_Delft) responses.symbols_meaning_Delft = symbols_meaning_Delft.value;
 
     
 
@@ -1052,88 +1132,13 @@ if (slider_symbols_meaning_Rotterdam) responses.slider_symbols_meaning_Rotterdam
 const symbols_meaning_Rotterdam = document.getElementById('symbols_meaning_Rotterdam');
 if (symbols_meaning_Rotterdam) responses.symbols_meaning_Rotterdam = symbols_meaning_Rotterdam.value;
 
-// section C responses: Delft
-const slider_familiarity_Delft = document.getElementById('slider_familiarity_Delft');
-if (slider_familiarity_Delft) responses.slider_familiarity_Delft = slider_familiarity_Delft.value;
 
-const slider_layout_Delft = document.getElementById('slider_layout_Delft');
-if (slider_layout_Delft) responses.slider_layout_Delft = slider_layout_Delft.value;
-
-// collect text from id layout_Delft
-const layout_Delft = document.getElementById('layout_Delft');
-if (layout_Delft) responses.layout_Delft = layout_Delft.value;
-
-const slider_3D_clarity_Delft = document.getElementById('slider_3D_clarity_Delft');
-if (slider_3D_clarity_Delft) responses.slider_3D_clarity_Delft = slider_3D_clarity_Delft.value;
-
-const threeD_clarity_Delft = document.getElementById('threeD_clarity_Delft');
-if (threeD_clarity_Delft) responses.threeD_clarity_Delft = threeD_clarity_Delft.value;
-
-const slider_info_Delft = document.getElementById('slider_info_Delft');
-if (slider_info_Delft) responses.slider_info_Delft = slider_info_Delft.value;
-
-const info_Delft = document.getElementById('info_Delft');
-if (info_Delft) responses.info_Delft = info_Delft.value;
-
-// check multiple choice question id scaleDelft
-const scaleDelft = document.querySelector('input[name="scaleDelft"]:checked');
-if (scaleDelft) responses.scaleDelft = scaleDelft.value;
-
-const slider_legend_completeness_Delft = document.getElementById('slider_legend_completeness_Delft');
-if (slider_legend_completeness_Delft) responses.slider_legend_completeness_Delft = slider_legend_completeness_Delft.value;
-
-const legend_clarity_Delft = document.getElementById('legend_clarity_Delft');
-if (legend_clarity_Delft) responses.legend_clarity_Delft = legend_clarity_Delft.value;
-
-const slider_legend_clarity_Delft = document.getElementById('slider_legend_clarity_Delft');
-if (slider_legend_clarity_Delft) responses.slider_legend_clarity_Delft = slider_legend_clarity_Delft.value;
-
-const legend_content_Delft = document.getElementById('legend_content_Delft');
-if (legend_content_Delft) responses.legend_content_Delft = legend_content_Delft.value;
-
-const slider_text_clarity_Delft = document.getElementById('slider_text_clarity_Delft');
-if (slider_text_clarity_Delft) responses.slider_text_clarity_Delft = slider_text_clarity_Delft.value;
-
-const text_clarity_Delft = document.getElementById('text_clarity_Delft');
-if (text_clarity_Delft) responses.text_clarity_Delft = text_clarity_Delft.value;
-
-const slider_text_visualization_Delft = document.getElementById('slider_text_visualization_Delft');
-if (slider_text_visualization_Delft) responses.slider_text_visualization_Delft = slider_text_visualization_Delft.value;
-
-const text_visualization_Delft = document.getElementById('text_visualization_Delft');
-if (text_visualization_Delft) responses.text_visualization_Delft = text_visualization_Delft.value;
-
-const slider_color_clarity_Delft = document.getElementById('slider_color_clarity_Delft');
-if (slider_color_clarity_Delft) responses.slider_color_clarity_Delft = slider_color_clarity_Delft.value;
-
-const color_clarity_Delft = document.getElementById('color_clarity_Delft');
-if (color_clarity_Delft) responses.color_clarity_Delft = color_clarity_Delft.value;
-
-const slider_color_meaning_Delft = document.getElementById('slider_color_meaning_Delft');
-if (slider_color_meaning_Delft) responses.slider_color_meaning_Delft = slider_color_meaning_Delft.value;
-
-const color_meaning_Delft = document.getElementById('color_meaning_Delft');
-if (color_meaning_Delft) responses.color_meaning_Delft = color_meaning_Delft.value;
-
-const slider_symbols_clarity_Delft = document.getElementById('slider_symbols_clarity_Delft');
-if (slider_symbols_clarity_Delft) responses.slider_symbols_clarity_Delft = slider_symbols_clarity_Delft.value;
-
-const symbols_clarity_Delft = document.getElementById('symbols_clarity_Delft');
-if (symbols_clarity_Delft) responses.symbols_clarity_Delft = symbols_clarity_Delft.value;
-
-const slider_symbols_meaning_Delft = document.getElementById('slider_symbols_meaning_Delft');
-if (slider_symbols_meaning_Delft) responses.slider_symbols_meaning_Delft = slider_symbols_meaning_Delft.value;
-
-const symbols_meaning_Delft = document.getElementById('symbols_meaning_Delft');
-if (symbols_meaning_Delft) responses.symbols_meaning_Delft = symbols_meaning_Delft.value;
 
 // collect the "result" from sortable, which is an array of the id's of the items in the sortable list, called sortedIDs
 const sortedIDs = $("#sortable").sortable("toArray");
 if (sortedIDs) responses.sortedIDs = sortedIDs;
 
-//collect email address on the submit page
-const emailInput = document.getElementById('emailInput');
-if (emailInput) responses.email = emailInput.value;
+
 
 
 
