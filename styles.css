@@ -751,14 +751,17 @@ img {
                         }
 
                         .sidebar {
-                           bottom:0;
+                           top: 85vh;
                             right:0;
-                            height: 8vh;
+                            height: 12vh;
                             width: 15vw;
                             background-color: #9ab6c9; 
-                                opacity: 0.7;
+                            
                         
                         }
+                            .sidebar img {
+                                    bottom: 3vh;
+                            }
 
                         .sidebar p {
                             text-orientation: sideways-right;
