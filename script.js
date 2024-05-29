@@ -1159,7 +1159,7 @@ function submitSurvey() {
     emailjs.send('service_54xirq9', 'template_6a0qubb', emailParams) // Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with your actual values
         .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
-            alert('Survey submitted successfully!');
+            alert('Survey submitted successfully! You can now close the page.');
         }, function(error) {
             console.log('FAILED...', error);
             alert('Failed to submit the survey. Please try again.');
