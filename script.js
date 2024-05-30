@@ -1138,6 +1138,11 @@ if (symbols_meaning_Rotterdam) responses.symbols_meaning_Rotterdam = symbols_mea
 const sortedIDs = $("#sortable").sortable("toArray");
 if (sortedIDs) responses.sortedIDs = sortedIDs;
 
+        // collect explanation for sorting 
+        const ranking = document.getElementById('ranking');
+        if (ranking) responses.ranking = ranking;
+        
+
 
 
 
