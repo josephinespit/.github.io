@@ -447,51 +447,96 @@ img {
 
 
                     .slider-container {
-                        display: flex;
-                        justify-content: left;
-                        align-items: left;
-                        margin: 20px;
-                        width: 55vw;
-                        margin-bottom: 50px;
-                    }
-                    
-                    .slider-wrapper {
-                        display: flex;
-                        align-items: center;
-                    }
-                    
-                    
-                    .slider {
-                        writing-mode: vertical-lr;
-                        direction: rtl;
-                        width: 8px;
-                        height: 20vh;
-                        margin-right: 10px;
-                    }
-                    
-                    .slider-labels {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-                        height: 20vh;
-                        justify-content: space-between;
-                        font-size: 14px;
-                    } 
-                    
-                    .slider-labels span {
-                        display: block;
-                        height: 20px;
-                        line-height: 25px; 
-                    }
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 20px;
+    width: 55vw;
+    margin-bottom: 50px;
+}
 
-                    .slider-label {
-                        cursor: pointer;
-                    }
+.slider-wrapper {
+    display: flex;
+    align-items: center;
+}
 
-                    .slider-label.active {
-                        color:#9ab6c9c4;
-                    }
+.slider {
+    writing-mode: vertical-lr;
+    direction: rtl;
+    width: 8px;
+    height: 20vh;
+    margin-right: 10px;
+    -webkit-appearance: none; /* Safari */
+    appearance: none;
+    background: #ddd; /* Fallback background color */
+}
 
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Safari */
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-ms-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider-labels {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 20vh;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.slider-labels span {
+    display: block;
+    height: 20px;
+    line-height: 25px; 
+}
+
+.slider-label {
+    cursor: pointer;
+}
+
+.slider-label.active {
+    color: #9ab6c9c4;
+}
+
+/* Add a default track background for Safari */
+.slider::-webkit-slider-runnable-track {
+    background: #ddd;
+    height: 20vh;
+    width: 8px;
+}
+
+.slider::-moz-range-track {
+    background: #ddd;
+    height: 20vh;
+    width: 8px;
+}
+
+.slider::-ms-track {
+    background: #ddd;
+    height: 20vh;
+    width: 8px;
+    border-color: transparent;
+    color: transparent;
+}
             
                     button {
                         display: inline-block;
