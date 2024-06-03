@@ -43,7 +43,7 @@
                     updateSliderColor(this, value);
                 });
 
-                slider.addEventListener("touchmove", function(e) {
+                function handleTouchMove(e) {
                     e.preventDefault(); // Prevent scrolling
                     const touch = e.touches[0];
                     const rect = slider.getBoundingClientRect();
@@ -54,7 +54,13 @@
                     const sliderValue = parseInt(slider.value);
                     updateLabels(sliderValue);
                     updateSliderColor(slider, sliderValue);
-                });   
+                }
+
+                    slider.addEventListener("touchmove", handleTouchMove);
+
+                    labels.forEach(label => {
+                            label.addEventListener("touchmove", handleTouchMove);
+                    });
 
                 // Initialize the correct label on load
                 const initialValue = parseInt(slider.value);
