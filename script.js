@@ -43,6 +43,19 @@
                     updateSliderColor(this, value);
                 });
 
+                 slider.addEventListener("touchmove", function(e) {
+                    e.preventDefault(); // Prevent scrolling
+                    const touch = e.touches[0];
+                    const rect = slider.getBoundingClientRect();
+                    const offsetY = touch.clientY - rect.top;
+                    const percentage = offsetY / rect.height;
+                    const value = Math.round(percentage * (slider.max - slider.min) + parseInt(slider.min));
+                    slider.value = Math.max(slider.min, Math.min(slider.max, value));
+                    const sliderValue = parseInt(slider.value);
+                    updateLabels(sliderValue);
+                    updateSliderColor(slider, sliderValue);
+                });   
+
                 // Initialize the correct label on load
                 const initialValue = parseInt(slider.value);
                 updateLabels(initialValue);
