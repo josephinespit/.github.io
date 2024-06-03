@@ -469,6 +469,7 @@ img {
                         margin-right: 10px;
                         writing-mode: vertical-lr;
                         direction: rtl;
+                        border-radius: 5px; /* Rounded corners */
                     }
             
                     .slider::-webkit-slider-thumb {
