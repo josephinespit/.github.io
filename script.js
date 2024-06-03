@@ -31,15 +31,25 @@
                     });
                 }
 
+                function updateSliderColor(slider, value) {
+                    const percentage = ((value - slider.min) / (slider.max - slider.min)) * 100;
+                    slider.style.background = `linear-gradient(to bottom, #ddd ${100 - percentage}%, #2d6d97c4 ${100 - percentage}%)`;
+
+                }
+
                 slider.addEventListener("input", function() {
                     const value = parseInt(this.value);
                     updateLabels(value);
+                    updateSliderColor(this, value);
                 });
 
                 // Initialize the correct label on load
-                updateLabels(parseInt(slider.value));
+                const initialValue = parseInt(slider.value);
+                updateLabels(initialValue);
+                updateSliderColor(slider, initialValue);
             });
         });
+
 
 
         // $(function() {
