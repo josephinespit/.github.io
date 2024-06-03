@@ -482,6 +482,7 @@ img {
                         position: relative;
                         border-radius: 50%;
                         border: 1px solid #ffffff;
+                        touch-action: pan-y; /* Allow vertical touch sliding */
 
                        
                     }
