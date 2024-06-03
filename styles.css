@@ -454,21 +454,51 @@ img {
                         width: 55vw;
                         margin-bottom: 50px;
                     }
-                    
+            
                     .slider-wrapper {
                         display: flex;
                         align-items: center;
                     }
-                    
-                    
+            
                     .slider {
-                        writing-mode: vertical-lr;
-                        direction: rtl;
+                        -webkit-appearance: none; /* Safari */
+                        appearance: none;
                         width: 8px;
                         height: 20vh;
+                        background: #ddd; /* Initial background */
                         margin-right: 10px;
+                        writing-mode: vertical-lr;
+                        direction: rtl;
                     }
-                    
+            
+                    .slider::-webkit-slider-thumb {
+                        -webkit-appearance: none; /* Safari */
+                        appearance: none;
+                        width: 15px;
+                        height: 15px;
+                        background: #2d6d97;
+                        cursor: pointer;
+                        position: relative;
+                        border-radius: 50%;
+                        border: 1px solid #ffffff;
+
+                       
+                    }
+            
+                    .slider::-moz-range-thumb {
+                        width: 25px;
+                        height: 25px;
+                        background: #2d6d97;
+                        cursor: pointer;
+                    }
+            
+                    .slider::-ms-thumb {
+                        width: 15px;
+                        height: 15px;
+                        background: #2d6d97;
+                        cursor: pointer;
+                    }
+            
                     .slider-labels {
                         display: flex;
                         flex-direction: column;
@@ -476,22 +506,23 @@ img {
                         height: 20vh;
                         justify-content: space-between;
                         font-size: 14px;
-                    } 
-                    
+                        color:#9ab6c9;
+                    }
+            
                     .slider-labels span {
                         display: block;
                         height: 20px;
                         line-height: 25px; 
                     }
-
+            
                     .slider-label {
                         cursor: pointer;
                     }
-
+            
                     .slider-label.active {
-                        color:#9ab6c9c4;
+                        color: #1e4a68;
+                        font-weight: bold;
                     }
-
             
                     button {
                         display: inline-block;
