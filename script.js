@@ -49,18 +49,23 @@
                     const rect = slider.getBoundingClientRect();
                     const offsetY = touch.clientY - rect.top;
                     const percentage = offsetY / rect.height;
-                    const value = Math.round((1 - percentage) * (slider.max - slider.min) + parseInt(slider.min)); // Flip the calculation
+                    const value = slider.max - Math.round((percentage) * (slider.max - slider.min)); // Update calculation to flip direction
                     slider.value = Math.max(slider.min, Math.min(slider.max, value));
                     const sliderValue = parseInt(slider.value);
                     updateLabels(sliderValue);
                     updateSliderColor(slider, sliderValue);
+
+                    const inputEvent = new Event('input', { bubbles: true });
+                    slider.dispatchEvent(inputEvent);
                 }
 
-                    slider.addEventListener("touchmove", handleTouchMove);
+                slider.addEventListener("touchmove", handleTouchMove);
+                slider.addEventListener("touchstart", handleTouchMove);
 
-                    labels.forEach(label => {
-                            label.addEventListener("touchmove", handleTouchMove);
-                    });
+                labels.forEach(label => {
+                    label.addEventListener("touchmove", handleTouchMove);
+                    label.addEventListener("touchstart", handleTouchMove);
+                });
 
                 // Initialize the correct label on load
                 const initialValue = parseInt(slider.value);
