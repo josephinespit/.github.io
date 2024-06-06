@@ -7,7 +7,8 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
     <script src="jquery.ui.touch-punch.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles.css">    
+    <link rel="stylesheet" type="text/css" href="styles.css">   
+    <link rel="stylesheet" href="https://use.typekit.net/hmu5rht.css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
     <script src="script.js"></script>
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
@@ -24,39 +25,53 @@
 <body>
     <div class="container">
         <div id="introPage" class="page">
+            <div class="header">
+                <h2>Survey on the Design of Campus Maps</h2>
+            </div>
+
+            <div class="bodycontainer">
             <div class="questioncontainer">
-            <h2>Survey on the Design of Campus Maps</h2>
-            <p>Hello, and thank you very much for participating in this survey. My name is Josephine Spit and I am a Geomatics master's student at TU Delft.  <br> <br>
-                I am conducting this survey as part of my master's thesis.<br> <br> 
-                All data will be handled in compliance with European privacy legislation (GDPR), ensuring anonymity and exclusive use for research purposes, with data deletion upon completion of the thesis. <br><br><br>
-If you would like to stay up to date with the results, or have time to participate in a follow-up interview, please leave your email address below.  <br><br>
-                    <input type="text" id="emailInput" type="text" placeholder="Email address"><br><br><br>
-                
-                My thesis investigates the role of map users in the mapping process, and if/how different types of user participation influence the resulting map.  <br> 
+            
+           <p3> Hi!</p3>
+            <p> 
+                Thank you very much for participating in this survey.<br> My name is Josephine Spit and I am a Geomatics master's student at TU Delft.  <br> <br> </p></div>
+              <div class="intromailcontainer"> <p>I am conducting this survey as part of my master's thesis.<br> <br> 
+                If you would like to stay up to date with the results, or have time to participate in a follow-up interview, please leave your email address below.  <br><br>
+                    <input type="text" id="emailInput" type="text" placeholder="Email address"><br><br><br> </p> </div> 
+                <div class="questioncontainer"><p>All data will be handled in compliance with European privacy legislation (GDPR), ensuring anonymity and exclusive use for research purposes, with data deletion upon completion of the thesis. <br><br><br>
+                </p>
+               <p>My thesis investigates the role of map users in the mapping process, and if/how different types of user participation influence the resulting map.  <br><br> </p> </div> 
                 
             
-            </p>
+             <div class="intromailcontainer">
                 <div class="survey-summary">
-                    <p>The survey consists of five parts:</p>
+                    <p3>The survey consists of five parts:</p3>
                     <ul>
                         <li><strong>Part A</strong>: Some questions about yourself.</li>
                         <li><strong>Part B</strong>: Questions related to your experience and engagement with the TU Delft campus.</li>
                         <li><strong>Part C</strong>: Defining your use of a campus map.</li>
                         <li><strong>Part D</strong>: Rating different campus maps on their content and design.</li>
                         <li><strong>Part E</strong>: Comparing the different campus maps to determine which one best fits your needs.</li>
-                    </ul>
+                    </ul></div>
                     <p>The details will be explained along the survey. <br> <br>
-                        This survey will take approximately 15 minutes.</p>
-                </div>
+                        </p>
+                
               
+            </div>
+
+            <div class="questioncontainer">
+                <p> The survey will take approximately 15 minutes to complete. <br> <br> </p>
+                </div>
             </div>
                 <button id="nextButtonIntro" onclick="showPage('personalPage')"> Start survey</button>
         </div>
 
         <div id="personalPage" class="page" style="display: none"> 
+            <div class="header">
+            <h2>Part A: Questions about you</h2> </div>
 
-            <h2>Part A: Questions about you</h2>
-            <p>* Required</p>
+            <div class="bodycontainer">
+            <p>* Required <br><br></p>
             
             <div class="questioncontainer">
                 <div class="openquestion">
@@ -113,15 +128,16 @@ If you would like to stay up to date with the results, or have time to participa
                 <textarea rows="4" cols = "50" id="nationalityInput" required></textarea>
 
             </div>
-        </div>            
+        </div>   
+        </div>         
             <button id="previousButton" onclick="showPage('introPage')">Previous</button>
             <button id="personalButton" disabled title="" onclick="showPage('campusPage')">Next</button> 
            
         </div>
 
         <div id="campusPage" class="page" style="display:none">
-            <h2>Part B: Questions about your experience on campus </h2>
-            <p>* Required</p>
+            <div class="header"><h2>Part B: Questions about your experience on campus </h2></div>
+           <div class="bodycontainer"> <p>* Required<br><br></p>
                 
             
             <div class="questioncontainer">
@@ -208,7 +224,7 @@ If you would like to stay up to date with the results, or have time to participa
             <textarea rows="4" cols="50" id="campusExperience" required></textarea>
         </div>
         </div>
-
+    </div>
         <br>
 
         
@@ -218,8 +234,11 @@ If you would like to stay up to date with the results, or have time to participa
         </div>
 
         <div id="mapUsePage" class="page" style="display:none">
-            <h2>Part C: Question about your use of a campus map</h2>
-            
+            <div class="header">
+                <h2>Part C: Question about your use of a campus map</h2>
+            </div>
+
+            <div class="bodycontainer">
 <p> * Required</p>
             <div class="questioncontainer">
                 <h3>11.	For which purpose would you use a campus map primarily? *</h3><br>
@@ -231,6 +250,7 @@ If you would like to stay up to date with the results, or have time to participa
                     <input  name="purposeOther" id="purposeOtherInput" placeholder="Please specify"> <br>
                 </div> 
                 </div><br>
+            </div>
 
                 <button onclick="showPage('campusPage')">Previous</button>
                 <button id="mapUseButton" disabled title="" onclick="showPage('ratingMapsPage')">Next</button>
@@ -238,20 +258,26 @@ If you would like to stay up to date with the results, or have time to participa
 
 
         <div id="ratingMapsPage" class="page" style="display:none">
-            <h2>Part D: Questions about your preferences for campus maps</h2>
+          <div class="header"> <h2>Part D: Questions about your preferences for campus maps</h2> </div> 
             
-
+<div class="bodycontainer">
             <div class = "questioncontainer">
-            <h3> Design and content</h3>
-            <p>In this part you will be asked to rate the maps of 5 different campuses in the Netherlands. The following universities were chosen: <br><br>
-                1.	Delft University of Technology <br>
-                2.	Wageningen University & Research<br>
-                3.	Vrije Universiteit Amsterdam<br>
-                4.	Eindhoven University of Technology <br>
-                5.	Erasmus University Rotterdam <br> <br>
+            <p>In this part you will be asked to rate the maps of 5 different campuses in the Netherlands. <br><br></p>
+
+                <div class="survey-summary">
+                    <p> The following universities were chosen:</p>
+                    <ul>
+                        <li><strong>1.</strong> Delft University of Technology</li>
+                        <li><strong>2.</strong>	Wageningen University & Research</li>
+                        <li><strong>3.</strong>	Vrije Universiteit Amsterdam</li>
+                        <li><strong>4.</strong>	Eindhoven University of Technology</li>
+                        <li><strong>5.</strong>	Erasmus University Rotterdam</li>
+                    </ul></div>
+
+               
                 
                 
-            You will rate each map on its content and presentation.</p></div>
+            <p>You will rate each map on its content and presentation.</div> </div></p>
 
             <button onclick="showPage('mapUsePage')">Previous</button>
             <button id="ratingMapsButton" onclick="showPage('DelftPage')">Next</button>
@@ -269,18 +295,19 @@ If you would like to stay up to date with the results, or have time to participa
             <p2>Click on the image to hide</p2>
             </div>  
 
+            <div class="header"></class><h2>Delft Univeristy of Technology</h2></div>
             <div class="container4">
-            <h2>Delft Univeristy of Technology</h2>
+                
             <p>Rate the map of Delft University of Technology on its content and presentation, keeping in mind the purpose a campus map has to you. 
-                <br><br>You can view the map at any moment by clicking the button in the top right corner.</p>
+                <br><br>You can view the map at any moment by clicking the button in the bottom right corner.</p>
         <!-- Map image Delft   -->
         <img src="Delft_plattegrond.png" alt="Delftmap"  height="auto" class="enlarge">
         <p2>Click on the image to zoom in/out</p2>
         
             </div>
+            <p>* Required </p>
             
-            
-            <br>
+
 
 
         <div class="container3">
@@ -553,18 +580,23 @@ If you would like to stay up to date with the results, or have time to participa
                 <img src="Wageningen_plattegrond.png" alt="wagmapbig">
                 <p2>Click on the image to hide</p2>
             </div>
+            
+            <div class="header"><h2>Wageningen University & Research</h2></div>
             <div class="container4">
-            <h2>Wageningen University & Research</h2>
+                
             <p>Rate the map of Wageningen University & Research on its content and presentation, keeping in mind the purpose a campus map has to you. 
-                <br><br>You can view the map at any moment by clicking the button in the top right corner.</p>
+                <br><br>You can view the map at any moment by clicking the button in the bottom right corner.</p>
 <!-- Map image Wageningen    -->
 <img src="Wageningen_plattegrond.png" alt="Wageningen map"  height="auto" class="enlarge">
 <p2>Click on the image to zoom in/out</p2>
 
     
 </div> 
+
+<p>* Required </p>
+    
             
-            <br>
+            
 
 
 
@@ -807,7 +839,7 @@ If you would like to stay up to date with the results, or have time to participa
             <button onclick="showPage('DelftPage')">Previous</button>
             <button id="WagButton" onclick="showPage('VUPage')">Next</button>
             
-            </div>
+        </div>
 
         <div id="VUPage" class="page" style="display:none">
             <div class="sidebar">
@@ -822,15 +854,18 @@ If you would like to stay up to date with the results, or have time to participa
 
 
 
-            <div class="container4">
+           <div class="header">
             <h2>Vrije Universiteit Amsterdam</h2>
+</div>
+            <div class="container4">
+               
             <p>Rate the map of Vrije Universiteit Amsterdam on its content and presentation, keeping in mind the purpose a campus map has to you. 
-                <br><br>You can view the map at any moment by clicking the button in the top right corner.</p>
+                <br><br>You can view the map at any moment by clicking the button in the bottom right corner.</p>
 <!-- Map image VU    -->
 <img src="Amsterdam_plattegrond.png" alt="VU map"  height="auto" class="enlarge">
 <p2>Click on the image to zoom in/out</p2>
 </div>
-            <br>
+<p>* Required </p>
 
             <div class="container3">
             <h2>Content and organization</h2><br>
@@ -1103,10 +1138,13 @@ If you would like to stay up to date with the results, or have time to participa
 <p2>Click on the image to hide</p2>
             </div>
 
-            <div class="container4">
+            <div class="header">
             <h2>Eindhoven University of Technology</h2>
+</div>
+            <div class="container4">
+                
             <p>Rate the map of Eindhoven University of Technology on its content and presentation, keeping in mind the purpose a campus map has to you. 
-                <br><br>You can view the map at any moment by clicking the button in the top right corner.</p>
+                <br><br>You can view the map at any moment by clicking the button in the bottom right corner.</p>
         <!-- Map image Eindhoven   -->
         <img src="Eindhoven_plattegrond.png" alt="Eindhovenmap"  height="auto" class="enlarge">
         <p2>Click on the image to zoom in/out</p2>
@@ -1114,7 +1152,7 @@ If you would like to stay up to date with the results, or have time to participa
             </div>
             
             
-            <br>
+            <p>* Required </p>
         
         <!-- Content and org  -->
             <div class="container3">
@@ -1367,10 +1405,13 @@ If you would like to stay up to date with the results, or have time to participa
                 </div>
 
 
-                <div class="container4">
+                <div class="header">
                 <h2>Erasmus Univeristy Rotterdam</h2>
+</div>  
+                <div class="container4">
+                    
                 <p>Rate the map of Erasmus University Rotterdam on its content and presentation, keeping in mind the purpose a campus map has to you. 
-                <br><br>You can view the map at any moment by clicking the button in the top right corner.</p>
+                <br><br>You can view the map at any moment by clicking the button in the bottom right corner.</p>
             <!-- Map image Rotterdam   -->
             <img src="Rotterdam_plattegrond.png" alt="Rotterdammap"  height="auto" class="enlarge">
             <p2>Click on the image to zoom in/out</p2>
@@ -1378,7 +1419,7 @@ If you would like to stay up to date with the results, or have time to participa
             </div>  
                 
                 
-                <br>
+            <p>* Required </p>
             
             <!-- Content and org  -->
                 <div class="container3">
@@ -1624,13 +1665,14 @@ If you would like to stay up to date with the results, or have time to participa
 
 
                       
-                        <h2>Part E: Comparing the maps</h2>
-                        <p>* Required</p>
+                        <div class="header"> <h2>Part E: Comparing the maps</h2> </div>
+                        
                      
-
-                            <div class="questioncontainer">
-                        <h2>Compare the maps</h2>
-            <p>83. Please rank the campus maps from best (top) to worst (bottom), for how well the maps serve the purpose that you would use a campus map for. *</p>
+<div class="bodycontainer">
+    <p>* Required</p>
+                            <div class="questioncontainer">            
+            
+                        <p>83. Please rank the campus maps from best (top) to worst (bottom), for how well the maps serve the purpose that you would use a campus map for. *</p>
             <br>
             <ul id="sortable">
                 <li class="ui-state-default" id="Wagranking">
@@ -1671,11 +1713,13 @@ If you would like to stay up to date with the results, or have time to participa
 
             <button onclick="showPage('RotterdamPage')">Previous</button>
             <button id="compareButton" onclick="showPage('submitPage')">Next</button>
-
+</div>
         </div>
 
             <div id="submitPage" class="page" style="display:none">
-                <h2>Thank you for participating in this survey!</h2>
+               <div class="header"> <h2>Thank you for participating in this survey!</h2> </div>
+
+               <div class="bodycontainer">
                 <p>Your responses are greatly appreciated and will be used for research purposes only. <br>
                      <br>
 
@@ -1684,9 +1728,11 @@ If you would like to stay up to date with the results, or have time to participa
     
                 <button onclick="showPage('ComparePage')">Previous</button>
                 <button id="submitButton" onclick="submitSurvey()">Submit</button>
-    
+            </div>
         </div>
         </div>
+
+        </body>
                                 
 
 
