@@ -1239,7 +1239,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 10); // Slight delay to allow display change to be registered
 
             // Add a click event listener to the enlarged image container to hide it
-            enlargedImageContainer2.addEventListener('click', function() {
+            sidebar.addEventListener('click', function() {
                 // Start the transition to hide the enlarged image container
                 enlargedImageContainer2.style.opacity = '0';
                 enlargedImageContainer2.style.transform = 'translate(-50%, -50%) scale(0.9)';
